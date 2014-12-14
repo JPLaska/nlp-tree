@@ -1,0 +1,416 @@
+%% Sent 1
+(
+	(S
+		(S-MO
+			(VMFIN-HD Mögen)
+			(NP-SB
+				(NN-NK Puristen)
+				(NP-GR
+					(PIDAT-NK aller)
+					(NN-NK Musikbereiche)
+				)
+			)
+			(ADV-MO auch)
+			(VP-OC
+				(NP-OA
+					(ART-NK die)
+					(NN-NK Nase)
+				)
+				(VVINF-HD rümpfen)
+			)
+		)
+		($, ,)
+		(NP-SB
+			(ART-NK die)
+			(NN-NK Zukunft)
+			(NP-GR
+				(ART-NK der)
+				(NN-NK Musik)
+			)
+		)
+		(VVFIN-HD liegt)
+		(PP-MO
+			(APPR-AC für)
+			(PIDAT-NK viele)
+			(ADJA-NK junge)
+			(NN-NK Komponisten)
+		)
+		(PP-MO
+			(APPRART-AC im)
+			(NN-NK Crossover-Stil)
+		)
+	)
+	($. .)
+)
+
+%% Sent 2
+(
+	(CS
+		(S-CJ
+			(PPER-SB Sie)
+			(VVFIN-HD gehen)
+			(CNP-OA
+				(NP-CJ
+					(ADJA-NK gewagte)
+					(NN-NK Verbindungen)
+				)
+				(KON-CD und)
+				(NN-CJ Risiken)
+			)
+			(PTKVZ-SVP ein)
+		)
+		($, ,)
+		(S-CJ
+			(VVFIN-HD versuchen)
+			(VP-OC
+				(NP-OA
+					(PPOSAT-NK ihre)
+					(NN-NK Möglichkeiten)
+				)
+				(VVIZU-HD auszureizen)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 3
+(
+	(CS
+		(S-CJ
+			(VP-SB
+				(CNP-OA
+					(NN-CJ Folklore)
+					($, ,)
+					(NN-CJ Rock)
+					($, ,)
+					(NN-CJ Klassik)
+					(KON-CD und)
+					(NN-CJ Jazz)
+				)
+				(VZ-HD
+					(PTKZU-PM zu)
+					(VVINF-HD vermischen)
+				)
+			)
+			(VVFIN-HD reicht)
+			(PPER-DA ihnen)
+			(PTKNEG-NG nicht)
+		)
+		($, ,)
+		(S-CJ
+			(PPER-SB sie)
+			(VVFIN-HD nutzen)
+			(NP-OA
+				(ART-NK die)
+				(NN-NK Elektronik)
+			)
+		)
+		(KON-CD und)
+		(S-CJ
+			(VAFIN-HD sind)
+			(VP-OC
+				(ADV-MO sogar)
+				(PP-MO
+					(PROAV-PH dazu)
+					(*T1*-RE -)
+				)
+				(VVPP-HD übergegangen)
+				($, ,)
+				(VP-*T1*
+					(NN-OA Instrumente)
+					(ADV-MO selbst)
+					(VZ-HD
+						(PTKZU-PM zu)
+						(VVINF-HD bauen)
+					)
+				)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 4
+(
+	(CS
+		(S-CJ
+			(NP-SB
+				(PPER-PH Es)
+				(*T1*-RE -)
+			)
+			(VVFIN-HD spielt)
+			(ADV-MO eben)
+			(NP-OA
+				(PIAT-NK keine)
+				(NN-NK Rolle)
+			)
+			($, ,)
+			(S-*T1*
+				(KOUS-CP ob)
+				(NP-SB
+					(ART-NK die)
+					(NN-NK Musik)
+				)
+				(ADJD-PD gefällig)
+				(VAFIN-HD ist)
+			)
+		)
+		($*LRB* -)
+		(S-CJ
+			(ADV-MO nur)
+			(NP-*T2*
+				(PIAT-NK etwas)
+				($*LRB* ")
+				(NN-NK Neues)
+			)
+			($*LRB* ")
+			(VMFIN-HD muß)
+			(PPER-SB sie)
+			(CVP-OC
+				(VP-CJ
+					(*T2*-PD -)
+					(VAINF-HD sein)
+				)
+				(KON-CD und)
+				(VP-CJ
+					(NP-OA
+						(ART-NK eine)
+						(ADJA-NK eigene)
+						(NN-NK Handschrift)
+					)
+					(VVINF-HD aufweisen)
+				)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 5
+(
+	(S
+		(ADJD-PD Schade)
+		(ADV-MO jedoch)
+		($, ,)
+		(S-SB
+			(KOUS-CP daß)
+			(NP-SB
+				(ADV-MO kaum)
+				(PIS-NK jemand)
+			)
+			(VP-OC
+				(PROAV-MO daran)
+				(VVINF-HD teilhaben)
+			)
+			(VMFIN-HD kann)
+		)
+	)
+	($. .)
+)
+
+%% Sent 6
+(
+	(S
+		(NP-PD
+			(ART-NK Das)
+			(ADJA-NK einzige)
+			(NN-NK Forum)
+			(PP-MNR
+				(APPR-AC für)
+				(PDAT-NK diese)
+				(NN-NK Musik)
+			)
+		)
+		(VAFIN-HD ist)
+		(NP-SB
+			(ART-NK das)
+			(ADJA-NK interessierte)
+			(NN-NK Publikum)
+			(PP-MNR
+				(APPR-AC bei)
+				(CNP-NK
+					(NN-CJ Konzerten)
+					(KON-CD und)
+					(NN-CJ Festivals)
+				)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 7
+(
+	(S
+		(ADJD-MO Selten)
+		(VVFIN-HD nehmen)
+		(NP-SB
+			(ART-NK die)
+			(ADJA-NK großen)
+			(NN-NK Plattenfirmen)
+		)
+		(NP-OA
+			(ART-NK das)
+			(ADJA-NK finanzielle)
+			(NN-NK Risiko)
+			(*T1*-OC -)
+		)
+		(PP-MO
+			(APPR-AC auf)
+			(PRF-NK sich)
+		)
+		($, ,)
+		(VP-*T1*
+			(NP-DA
+				(ART-NK den)
+				(NN-NK Arbeiten)
+			)
+			(PP-MO
+				(APPR-AC zu)
+				(ART-NK einer)
+				(NN-NK Veröffentlichung)
+			)
+			(VZ-HD
+				(PTKZU-PM zu)
+				(VVINF-HD verhelfen)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 8
+(
+	(CS
+		(S-CJ
+			(ADV-MO Schließlich)
+			($, ,)
+			(S-MO
+				(KOUS-CP nachdem)
+				(NP-SB
+					(ART-NK die)
+					(ADJA-NK einzelnen)
+					(NN-NK Künstler)
+				)
+				(VP-OC
+					(ISU-OA
+						(NN-UC Tonband)
+						(APPR-UC nach)
+						(NN-UC Tonband)
+					)
+					(PP-MO
+						(APPR-AC an)
+						(ART-NK die)
+						(ADJA-NK verschiedenen)
+						(NN-NK Companys)
+					)
+					(VVPP-HD gesandt)
+				)
+				(VAFIN-HD haben)
+			)
+			($, ,)
+			(VVFIN-HD wenden)
+			(PPER-SB sie)
+			(PRF-OA sich)
+			(PP-MO
+				(APPR-AC an)
+				(ADJA-NK berühmte)
+				(NN-NK Kollegen)
+			)
+		)
+		(KON-CD und)
+		(S-CJ
+			(VVFIN-HD bitten)
+			(PP-MO
+				(APPR-AC um)
+				(CNP-NK
+					(NN-CJ Rat)
+					(KON-CD und)
+					(NN-CJ Unterstützung)
+				)
+			)
+		)
+	)
+	($. .)
+)
+
+%% Sent 9
+(
+	(S
+		(NP-SB
+			(ADV-MO Auch)
+			(MPN-NK
+				(NE-PNC Philip)
+				(NE-PNC Glass)
+			)
+		)
+		(VAFIN-HD wurde)
+		(VP-OC
+			(PP-MO
+				(APPR-AC auf)
+				(PPOSAT-NK seinen)
+				(ADJA-NK weltweiten)
+				(NN-NK Tourneen)
+			)
+			(PP-MO
+				(APPR-AC mit)
+				(CNP-NK
+					(NN-CJ Kassetten)
+					(KON-CD und)
+					(NN-CJ Tonbändern)
+				)
+			)
+			(VVPP-HD überschüttet)
+		)
+	)
+	($. .)
+)
+
+%% Sent 10
+(
+	(S
+		(NP-SB
+			(NE-NK Glass)
+			($, ,)
+			(AP-MNR
+				(PP-MO
+					(APPR-AC für)
+					(ADJA-NK neue)
+					(NN-NK Talente)
+					(NP-GR
+						(ART-NK der)
+						(ADJA-NK verschiedenen)
+						(NN-NK Kontinente)
+					)
+				)
+				(ADV-MO ohnehin)
+				(ADV-MO sehr)
+				(ADJD-HD aufgeschlossen)
+			)
+		)
+		($, ,)
+		(VAFIN-HD wäre)
+		(VP-OC
+			(PP-MO
+				(APPR-AC ohne)
+				(ART-NK die)
+				(NN-NK Einflüsse)
+				(NP-GR
+					(ART-NK der)
+					(ADJA-NK indischen)
+					(NN-NK Musik)
+				)
+			)
+			(PTKNEG-NG nicht)
+			(PP-MO
+				(APPR-AC zu)
+				(PPOSAT-NK seinem)
+				(ADJA-NK eigenen)
+				(NN-NK Stil)
+			)
+			(VVPP-HD gekommen)
+		)
+	)
+	($. .)
+)
