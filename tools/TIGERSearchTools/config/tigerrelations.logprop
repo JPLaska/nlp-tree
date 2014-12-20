@@ -1,0 +1,13 @@
+
+# Default log configuration of the TIGERSearch suite
+
+log4j.rootLogger=WARN,Logfile
+log4j.logger.ims.tiger=INFO
+
+log4j.appender.Logfile=org.apache.log4j.RollingFileAppender
+log4j.appender.Logfile.File=${user.home}/tigersearch/relationsanlayzer.log
+log4j.appender.Logfile.MaxFileSize=500KB
+log4j.appender.Logfile.MaxBackupIndex=1
+
+log4j.appender.Logfile.layout=org.apache.log4j.PatternLayout
+log4j.appender.Logfile.layout.ConversionPattern=%5r %-5p [%t] %c{2} - %m%n

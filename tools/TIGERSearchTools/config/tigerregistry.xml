@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE tigerregistry SYSTEM "tigerregistry.dtd">
+
+
+<!-- These are the default settings of the TIGERRegistry import module.
+     Please do NOT MODIFY this file! -->
+
+
+<tigerregistry version="1.0">
+
+
+  <!-- Import filter declaration -->
+
+  <importfilter>
+
+         <group name="general bracketing format">
+
+            <filter id="BracketingRound"
+                    name="general () filter"
+                    path="ims.tiger.importfilter.bracketing.MyGeneralRoundBracketingFilter" />
+
+            <filter id="BracketingSquare"
+                    name="general [] filter"
+                    path="ims.tiger.importfilter.bracketing.MyGeneralSquareBracketingFilter" />
+
+         </group>
+
+         <group name="Penn Treebank format">
+
+            <filter id="PennTreebank"
+                    name="general Penn treebank format filter"
+                    path="ims.tiger.importfilter.bracketing.MyUPennFilter" />
+
+            <filter id="ATIS"
+                    name="ATIS corpus filter"
+                    path="ims.tiger.importfilter.bracketing.MyAtisFilter" />
+
+            <filter id="SWITCHBOARD"
+                    name="SWITCHBOARD corpus filter"
+                    path="ims.tiger.importfilter.bracketing.MySwitchboardFilter" />
+
+            <filter id="KOREAN"
+                    name="Korean treebank corpus filter"
+                    path="ims.tiger.importfilter.bracketing.MyKoreaFilter" />
+
+            <filter id="NEGRA2PENN"
+                    name="treebanks converted by negra-topenn"
+                    path="ims.tiger.importfilter.bracketing.PennNegraFilter" />
+
+         </group>
+
+         <group name="Susanne and Christine">
+
+            <filter id="SUSANNE"
+                    name="Susanne corpus filter"
+                    path="ims.tiger.importfilter.bracketing.MySusanneFilter" />
+
+            <filter id="CHRISTINE"
+                    name="Christine corpus filter"
+                    path="ims.tiger.importfilter.bracketing.MyChristineFilter" />
+
+         </group>
+
+         <group name="Negra format">
+
+            <filter id="NEGRA"
+                    name="Negra format filter"
+                    path="ims.tiger.importfilter.negra.NeGraFilter" />
+<!--
+            <filter id="TIGER"
+                    name="TIGER Corpus Release 2 filter"
+                    path="ims.tiger.importfilter.negra.TigerFilter" />
+-->
+         </group>
+
+         <group name="IMS tools">
+
+            <filter id="LoPar"
+                    name="LoPar format filter"
+                    path="ims.tiger.importfilter.bracketing.lopar.LOPARFilter" />
+
+            <filter id="TreeTagger"
+                    name="TreeTagger format filter"
+                    path="ims.tiger.importfilter.imsutils.TreeTaggerFilter" />
+
+            <filter id="YAC"
+                    name="YAC format filter"
+                    path="ims.tiger.importfilter.imsutils.YACFilter" />
+
+        </group>
+
+        <group name="Other formats">
+
+            <filter id="DEREKO"
+                    name="DEREKO format filter"
+                    path="ims.tiger.importfilter.imsutils.DeReKoFilter" />
+
+        </group>
+
+  </importfilter>
+
+
+</tigerregistry>

@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookmarks name="Bookmark collection of user george">
+
+    <!--This collection of bookmarks gives the user 
+terminological access to the TIGER Corpus and 
+provides examples for formulating user queries.
+It assumes the presence of the type hierarchy
+for POS tags distributed with the corpus.
+
+Author: George Smith, Institut für Germanistik,
+Universität Potsdam-->
+    <group name="Verbal arguments">
+      <group name="Coocurrance of Arguments by Function">
+        <!--This group of queries accesses coocurrance of objects by 
+syntactic function.-->
+        <bookmark name="Object Accusative (OA), Dative (DA)">
+          <!--Accesses all instances of coocurrance of functions: Object Accusative (OA), Dative (DA).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;OA #oa | 
+#m &gt;~OA #oa) &amp;
+(#m &gt;DA #da | 
+#m &gt;~DA #da)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Object Accusative (OA), Prepositional Object (OP)">
+          <!--Accesses all instances of coocurrance of functions: Object Accusative (OA), Prepositional Object (OP).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;OA #oa | 
+#m &gt;~OA #oa) &amp;
+(#m &gt;OP #op | 
+#m &gt;~OP #op)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Dative (DA), Prepositional Object (OP)">
+          <!--Accesses all instances of coocurrance of functions: Dative (DA), Prepositional Object (OP).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;DA #da | 
+#m &gt;~DA #da) &amp;
+(#m &gt;OP #op | 
+#m &gt;~OP #op)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Object Accusative (OA), Collocational Verb Construction (CVC)">
+          <!--Accesses all instances of coocurrance of functions: Object Accusative (OA), Collocational Verb Construction (CVC).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;OA #oa | 
+#m &gt;~OA #oa) &amp;
+(#m &gt;CVC #cvc | 
+#m &gt;~CVC #cvc)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Dative (DA), Collocational Verb Construction (CVC)">
+          <!--Accesses all instances of coocurrance of functions: Dative (DA), Collocational Verb Construction (CVC).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;DA #da | 
+#m &gt;~DA #da) &amp;
+(#m &gt;CVC #cvc | 
+#m &gt;~CVC #cvc)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Dative (DA), Predicate (PD)">
+          <!--Accesses all instances of coocurrance of functions: Dative (DA), Predicate (PD).-->
+          <query>
+            <text>#m &amp; // mother
+(#m &gt;DA #da | 
+#m &gt;~DA #da) &amp;
+(#m &gt;PD #pd | 
+#m &gt;~PD #pd)</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+      </group>
+      <!--A collection of queries that access verbal arguments or combinations of verbal arguments.-->
+      <group name="Single Argument by Function">
+        <!--This group of queries accesses single objects by 
+their syntactic function.-->
+        <bookmark name="Dative (DA)">
+          <!--Accesses all instances of function: Dative (DA).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Expletive (EP)">
+          <!--Accesses all instances of function: Expletive (EP).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;EP #d | 
+#m &gt;~EP #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Funktionsverbgefge: Collocational Verb Construction (CVC)">
+          <!--Accesses all instances of function: Collocational Verb Construction (CVC).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;CVC #d | 
+#m &gt;~CVC #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Object clause (OC)">
+          <!--Accesses all instances of function: 
+Object clause (OC)-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;OC #d | 
+#m &gt;~OC #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Object, accusative (OA)">
+          <!--Accesses all instances of function: 
+Object, accusative (OA)-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Object, genitive (OG)">
+          <!--Accesses all instances of function: 
+Object, genitive (OG)-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;OG #d | 
+#m &gt;~OG #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Predicate (PD)">
+          <!--Accesses all instances of function: Predicate (PD).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;PD #d | 
+#m &gt;~PD #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Prepositional Object (OP)">
+          <!--Accesses all instances of function: Prepositional Object (OP).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;OP #d | 
+#m &gt;~OP #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Subject (SB)">
+          <!--Accesses all instances of function: Subject (SB).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+        <bookmark name="Subject, Passivized (SBP)">
+          <!--Accesses all instances of function: Subject, Passivized (SBP).-->
+          <query>
+            <text>#m &amp; // mother
+#d &amp; // daughter
+#m &gt;SBP #d | 
+#m &gt;~SBP #d</text>
+          </query>
+          <corpus id="tiger-potsdam-gesamt" />
+        </bookmark>
+      </group>
+      <group name="Single Arguments by Function and Category">
+        <!--This group of queries accesses verbal arguments by syntactic function and category.-->
+        <group name="Clausal Objects by Category and Function">
+          <!--This group of queries accesses clausal objects by category. Coordinated sentences (CS) are not taken into account.-->
+          <bookmark name="Object is infinitive with 'zu'">
+            <!--Accesses sentences in which the object is an infinitive or infinitive phrase with 'zu'-->
+            <query>
+              <text>#m &amp; // mother
+#vz:[cat="VZ"|pos="VVIZU"] &amp; // 'zu' plus infinitive
+(#m &gt;OC #vz |
+ (#m &gt;OC #d &amp;
+  #d &gt;HD #vz))</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object is sentence with W-form">
+            <!--Accesses sentences in which the object sentence has a W-form-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &amp; // daughter
+#m &gt;OC #d &amp;
+#w:[pos=prointer] &amp; // w-proform
+((#d &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #x3:[cat!=("S"|"CS")] &amp;
+  #x3 &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #x3:[cat!=("S"|"CS")] &amp;
+  #x3 &gt; #x4:[cat!=("S"|"CS")] &amp;
+  #x4 &gt; #w))</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object is sentence with complementizer">
+            <!--Accesses sentences in which the object sentence has a complementizer-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[]  &amp; // daughter dominates complementizer
+(#m &gt;OC #d | 
+#m &gt;~OC #d) </text>
+            </query>
+          </bookmark>
+          <bookmark name="Object is sentence with complementizer 'daß'">
+            <!--Accesses sentences in which the object sentence has
+            the complementizer 'daß'-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[word=("daß"|"Daß")]  &amp; // daughter dominates complementizer
+(#m &gt;OC #d | 
+#m &gt;~OC #d) </text>
+            </query>
+          </bookmark>
+          <bookmark name="Object is sentence with complementizer 'ob'">
+            <!--Accesses sentences in which the object sentence has
+            the complementizer 'ob'-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[word=("ob"|"Ob")]  &amp; // daughter dominates complementizer
+(#m &gt;OC #d | 
+#m &gt;~OC #d) </text>
+            </query>
+          </bookmark>
+        </group>
+        <group name="Dative by Category">
+          <!--This group of queries accesses dative arguments by category.-->
+          <bookmark name="Dative is noun or noun phrase">
+            <!--Accesses all instances in which the Dative (DA) is a
+          noun (NN, NE, PN), a noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP"|"PN")|pos=noun] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is noun phrase">
+            <!--Accesses all instances in which the Dative (DA) is a
+          noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP")] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is personal pronoun">
+            <!--Accesses all instances in which the Dative (DA) is a
+          personal pronoun (PPER)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PPER"] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is pronoun">
+            <!--Accesses all instances in which the Dative (DA) is a
+          pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos=pronoun] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is not pronoun">
+            <!--Accesses all instances in which the Dative (DA) is not a
+          pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos!=pronoun] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is proper noun">
+            <!--Accesses all instances in which the Dative (DA) is a
+          proper noun (NE, PN).-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="PN"|pos="NE"] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is reflexive pronoun">
+            <!--Accesses all instances in which the Dative (DA) is a
+          reflexive pronoun (PRF)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PRF"] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is not reflexive pronoun">
+            <!--Accesses all instances in which the Dative (DA) is not a
+          reflexive pronoun (PRF)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos!="PRF"] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Dative is relative pronoun">
+            <!--Accesses all instances in which the Dative (DA) is a
+          relative pronoun (PRELS)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PRELS"] &amp; // daughter
+#m &gt;DA #d | 
+#m &gt;~DA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+        </group>
+        <group name="Object, Accusative, by Category">
+          <!--This group of queries accesses accusative objects by category.-->
+          <bookmark name="Object, accusative, is noun or noun phrase">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          noun (NN, NE, PN), a noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP"|"PN")|pos=noun] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is noun phrase">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP")] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is personal pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          personal pronoun (PPER)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PPER"] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos=pronoun] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is not pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is not a
+          pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos!=pronoun] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is proper noun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          proper noun (NE, PN).-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="PN"|pos="NE"] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is reflexive pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          reflexive pronoun (PRF)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PRF"] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is not reflexive pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is not a
+          reflexive pronoun (PRF)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos!="PRF"] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Object, accusative, is relative pronoun">
+            <!--Accesses all instances in which the Object, accusative, (OA) is a
+          relative pronoun (PRELS)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PRELS"] &amp; // daughter
+#m &gt;OA #d | 
+#m &gt;~OA #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+        </group>
+        <group name="Subject by Category">
+          <!--This group of queries accesses subjects by category.-->
+          <bookmark name="Subject is noun or noun phrase">
+            <!--Accesses all instances in which the Subject (SB) is a
+          noun (NN, NE, PN), a noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP"|"PN")|pos=noun] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is noun phrase">
+            <!--Accesses all instances in which the Subject (SB) is a
+          noun phrase (NP) or coordinated noun phrase (CNP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("NP"|"CNP")] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is personal pronoun">
+            <!--Accesses all instances in which the Subject (SB) is a
+          personal pronoun (PPER)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PPER"] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is pronoun">
+            <!--Accesses all instances in which the Subject (SB) is a
+          pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos=pronoun] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is not pronoun">
+            <!--Accesses all instances in which the Subject (SB) is 
+          not a pronoun-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos=!pronoun] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is proper noun">
+            <!--Accesses all instances in which the Subject (SB) is a
+          proper noun (NE, PN).-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="PN"|pos="NE"] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is relative pronoun">
+            <!--Accesses all instances in which the Subject (SB) is a
+          relative pronoun (PRELS)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[pos="PRELS"] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is sentence">
+            <!--Accesses all instances in which the Subject (SB) is a
+          sentence (S) or coordinated sentence (CS)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("S"|"CS")] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is sentence with W-form">
+            <!--Accesses sentences in which the subject sentence has a W-form-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &amp; // daughter
+#m &gt;SB #d &amp;
+#w:[pos=prointer] &amp; // w-proform
+((#d &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #x3:[cat!=("S"|"CS")] &amp;
+  #x3 &gt; #w) |
+ (#d &gt; #x:[cat!=("S"|"CS")] &amp;
+  #x &gt; #x2:[cat!=("S"|"CS")] &amp;
+  #x2 &gt; #x3:[cat!=("S"|"CS")] &amp;
+  #x3 &gt; #x4:[cat!=("S"|"CS")] &amp;
+  #x4 &gt; #w))</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is sentence with complementizer">
+            <!--Accesses sentences in which the subject sentence has a complementizer-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[]  &amp; // daughter dominates complementizer
+(#m &gt;SB #d | 
+#m &gt;~SB #d) </text>
+            </query>
+          </bookmark>
+          <bookmark name="Subject is sentence with complementizer 'daß'">
+            <!--Accesses sentences in which the subject sentence has
+            the complementizer 'daß'-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[word=("daß"|"Daß")]  &amp; // daughter dominates complementizer
+(#m &gt;SB #d | 
+#m &gt;~SB #d) </text>
+            </query>
+          </bookmark>
+          <bookmark name="Subject is sentence with complementizer 'ob'">
+            <!--Accesses sentences in which the subject sentence has
+            the complementizer 'ob'-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat="S"] &gt;CP #cp:[word=("ob"|"Ob")]  &amp; // daughter dominates complementizer
+(#m &gt;SB #d | 
+#m &gt;~SB #d) </text>
+            </query>
+          </bookmark>
+          <bookmark name="Subject is verb phrase">
+            <!--Accesses all instances in which the Subject (SB) is a
+          verb phrase (VP) or a coordinated verb phrase (CVP)-->
+            <query>
+              <text>#m &amp; // mother
+#d:[cat=("VP"|"CVP")] &amp; // daughter
+#m &gt;SB #d | 
+#m &gt;~SB #d</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+          <bookmark name="Subject is infinitive with 'zu'">
+            <!--Accesses sentences in which the subject is an infinitive or infinitive phrase with 'zu'-->
+            <query>
+              <text>#m &amp; // mother
+#vz:[cat="VZ"|pos="VVIZU"] &amp; // 'zu' plus infinitive
+(#m &gt;SB #vz |
+ (#m &gt;SB #d &amp;
+  #d &gt;HD #vz))</text>
+            </query>
+            <corpus id="tiger-potsdam-gesamt" />
+          </bookmark>
+        </group>
+      </group>
+    </group>
+
+</bookmarks>
+

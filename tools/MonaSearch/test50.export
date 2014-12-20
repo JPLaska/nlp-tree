@@ -1,0 +1,1840 @@
+%% database cd38ger (corpus VMcd38ger)
+%%
+#FORMAT 3
+#BOT ORIGIN
+0	--	%% 
+1	cd38.export	%% 
+#EOT ORIGIN
+#BOT EDITOR
+-1	__-1		<Automatisch>
+0	__0		<Nicht_zugeordnet>
+1	kuebler		Sandra
+3	hschulz		Heike
+4	sfroemel	Steffen
+#EOT EDITOR
+#BOT WORDTAG
+-1	UNKNOWN	N	Unbekanntes Tag aus Einlesen aus Korpusdatei
+0	--	N	<Nicht zugeordnet>
+1	ADJA	Y	Attributives Adjektiv
+2	ADJD	Y	Adverbiales oder prädikatives Adjektiv
+3	ADV	Y	Adverb
+4	APPR	Y	Präposition; Zirkumposition links
+5	APPRART	Y	Präposition mit Artikel
+6	APPO	Y	Postposition
+7	APZR	Y	Zirkumposition rechts
+8	ART	Y	Bestimmter oder unbestimmter Artikel
+9	CARD	Y	Kardinalzahl
+10	FM	Y	Fremdsprachliches Material
+11	ITJ	Y	Interjektion
+12	KOUI	Y	Unterordnende Konjunktion mit zu und Infinitiv
+13	KOUS	Y	Unterordnende Konjunktion mit Satz
+14	KON	Y	Nebenordnende Konjunktion
+15	KOKOM	Y	Vergleichspartikel, ohne Satz
+16	NN	Y	Normales Nomen
+17	NE	Y	Eigennamen Hans*Hamburg*HSV
+18	PDS	Y	Substituierendes Demonstrativpronomen
+19	PDAT	Y	Attribuierendes Demonstrativpronomen
+20	PIS	Y	Substituierendes Indefinitpronomen
+21	PIAT	Y	Attribuierendes Indefinitpronomen
+22	PIDAT	Y	Attribuierendes Indefinitpronomen mit Determiner
+23	PPER	Y	Irreflexives Personalpronomen
+24	PPOSS	Y	Substituierendes Possessivpronomen
+25	PPOSAT	Y	Attribuierendes Possessivpronomen
+26	PRELS	Y	Substituierendes Relativpronomen
+27	PRELAT	Y	Attribuierendes Relativpronomen
+28	PRF	Y	Reflexives Personalpronomen
+29	PWS	Y	Substituierendes Interrogativpronomen
+30	PWAT	Y	Attribuierendes Interrogativpronomen
+31	PWAV	Y	Adverbiales Interrogativ- oder Relativpronomen
+32	PTKZU	Y	zu vor Infinitiv
+33	PTKNEG	Y	Negationspartikel
+34	PTKVZ	Y	Abgetrennter Verbzusatz
+35	PTKANT	Y	Antwortpartikel
+36	PTKA	Y	Partikel bei Adjektiv oder Adverb
+37	TRUNC	Y	Kompositions-Erstglied
+38	VVFIN	Y	Finites Verb, voll
+39	VVIMP	Y	Imperativ, voll
+40	VVINF	Y	Infinitiv, voll
+41	VVIZU	Y	Infinitiv mit zu, voll
+42	VVPP	Y	Partizip Perfekt, voll
+43	VAFIN	Y	Finites Verb, aux
+44	VAIMP	Y	Imperativ, aux
+45	VAINF	Y	Infinitiv, aux
+46	VAPP	Y	Partizip Perfekt, aux
+47	VMFIN	Y	Finites Verb, modal
+48	VMINF	Y	Infinitiv, modal
+49	VMPP	Y	Partizip Perfekt, modal
+50	XY	Y	Nichtwort, Sonderzeichen
+51	$,	N	Komma
+52	$.	N	Satzbeendende Interpunktion
+53	$(	N	Sonstige Satzzeichen; satzintern
+54	PROP	Y	NEU: pronominal verw. Praeposition ("dafuer")
+55	BS	Y	Buchstabe (z. B. bei Buchstabierung)
+#EOT WORDTAG
+#BOT MORPHTAG
+0	--	<not bound>
+#EOT MORPHTAG
+#BOT NODETAG
+0	--	<not bound> (muss immer "--" haben)
+1	SIMPX	simplex clause
+2	R-SIMPX	Relativsatz
+3	NX	noun chunk
+4	PX	prepositional phrase
+5	VXFIN	finite verb phrase
+6	MF	Mittelfeld
+7	VC	Verbkomplex
+8	NF	Nachfeld
+9	LK	Linke Satzklammer
+10	VF	Vorfeld
+11	ADVX	adverbial chunk
+12	ADJX	adjectival chunk
+13	P-SIMPX	Parataktische Verknuepfung zweier SIMPX
+14	VXINF	infinite verb phrase
+15	DM	Diskursmarker
+16	MVC	Konjunkt, bestehend aus MF und VC
+17	PARORD	Feld f. nicht-koord. beiordnende Partikeln (V2)
+18	C	Feld f. Komplementierer bei Verb-letzt-Saetzen
+19	KOORD	Feld f. koordinierende Partikeln (und, oder, aber usw.)
+20	LV	topologisches Feld fuer Linksversetzungen
+21	LKMVC	Konjunkt, bestehend aus LK, MF, VC
+22	LKM	Konjunkt, bestehend aus LK, MF
+23	MVCN	Konjunkt, bestehend aus MF, VC, NF
+24	MN	Konjunkt, bestehend aus MF, NF
+25	DP	Determinerphrase (z.B. "gar keine")
+26	VLKM	Konjunkt, bestehend aus VF, LK, MF
+27	VLKMVC	Konjunkt, bestehend aus VF, LK, MF, VC
+28	LKMVCN	Konjunkt, bestehend aus LK, MF, VC, NF
+29	LKMN	Konjunkt, bestehend aus LK, MF, NF
+30	FKOORD	komplexe Felderkoordination
+31	LKVCN	Konjunkt, bestehend aus LK, VC, N
+32	VCN	Konjunkt, bestehend aus VC und N
+33	CM	Konjunkt, bestehend aus C und MF
+34	CMVC	Konjunkt, bestehend aus C, MF und VC
+35	CMVCN	Konjunkt, bestehend aus C, MF, VC und NF
+36	LKN	Konjunkt, bestehend aus LK und N
+#EOT NODETAG
+#BOT EDGETAG
+0	--	not bound
+1	HD	Head
+2	ON	Nominativ-Objekt(=Subjekt)
+3	-	soll ungebunden bleiben
+4	OD	Dativ-Objekt
+5	MOD	nicht-eindeutiger Modifikator
+6	ON-MOD	Modifikator des Subjekts
+7	OA-MOD	Modifikator des Akkusativ-Objekts
+8	OD-MOD	Modifikator des Dativ-Objekts
+9	OPP	obligatorisches PP-Objekt
+10	OV	verbales Objekt
+11	VPT	abtrennbare Verbpartikel
+12	MOD-MOD	Modifikator eines anderen Modifikators
+13	APP	Apposition
+14	PRED	Praedikativ
+15	OA	Akkusativ-Objekt
+16	V-MOD	Modifikator des Verbs
+17	OPP-MOD	not bound
+18	PRED-MOD	Mod. eines Praedikats
+19	FOPP	fakultatives PP-Objekt
+20	OS	Objekt in Form eines Satzes
+21	OADVP	ADVP-Objekt
+22	FOPP-MOD	Modifikator eines FOPP
+23	OADJP	ADJP-Objekt
+24	OADVP-MO	Modifikator des ADVP-Objekts
+25	ONK	Nominativ-Objekt-Konjunkt
+26	ODK	Dativ-Objekt-Konjunkt
+27	OAK	Akkusativ-Objekt-Konjunkt
+28	OSK	Objektsatz-Konjunkt
+29	OVK	verbales Objekt-Konjunkt
+30	OPPK	obligatorisches PP-Objekt-Konjunkt
+31	OADVPK	Konjunkt des ADVP-Obj.-Modif.
+32	OADJPK	Konjunkt des ADJP-Obj.-Modif.
+33	FOPPK	fakul. PP-Objekt-Konjunkt
+34	PREDK	Praedikativ-Konjunkt
+35	VPTK	abtr.Verbpartikel-Konjunkt
+36	APPK	Apposition-Konjunkt
+37	MODK	nicht-eind. Modifikator-Konjunkt
+38	ON-MODK	Konjunkt d. Subjekt-Modif.
+39	OA-MODK	Konjunkt d. Akk.-Obj.-Modif.
+40	OD-MODK	Konjunkt d. Dat.-Obj.-Modif.
+41	V-MODK	Konjunkt d. Verb-Modif.
+42	OPP-MODK	Konjunkt d. obl. PP-Objekts
+43	PREDMODK	Konjunkt d. Praedikativs
+44	MOD-MODK	Konjunkt d. modif. Modifikators
+#EOT EDGETAG
+#BOT SECEDGETAG
+0	--	<not bound>
+1	ref1	vom ersten OV selegiert
+#EOT SECEDGETAG
+%% word			tag	morph		edge	parent	secedge comment
+#BOS 150 3 968681880 1 %% <g296acn2_012_AJG_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+ich			PPER	--		HD	501
+würde			VAFIN	--		HD	502
+auch			ADV	--		HD	503
+einen			ART	--		-	504
+Flug			NN	--		HD	504
+vorschlagen		VVINF	--		HD	505
+,			$,	--		--	0
+und			KON	--		-	506
+zwar			ADV	--		HD	506
+sehe			VVFIN	--		HD	507
+ich			PPER	--		HD	508
+ja			ADV	--		HD	509
+grade			ADV	--		HD	510
+,			$,	--		--	0
+die			PDS	--		HD	511
+gehen			VVFIN	--		HD	512
+tagsüber		ADV	--		HD	513
+jeweils			ADV	--		HD	514
+stündlich		ADJD	--		HD	515
+ab			APPR	--		-	535
+sieben			CARD	--		HD	516
+Uhr			NN	--		HD	530
+fünf			CARD	--		HD	517
+bis			APPR	--		-	536
+achtzehn		CARD	--		HD	518
+Uhr			NN	--		HD	531
+fünf			CARD	--		HD	519
+.			$.	--		--	0
+#500			ADVX	--		-	520
+#501			NX	--		ON	521
+#502			VXFIN	--		HD	522
+#503			ADVX	--		MOD	523
+#504			NX	--		OA	523
+#505			VXINF	--		OV	524
+#506			ADVX	--		MOD	525
+#507			VXFIN	--		HD	526
+#508			NX	--		ON	527
+#509			ADVX	--		MOD	527
+#510			ADVX	--		MOD	527
+#511			NX	--		ON	528
+#512			VXFIN	--		HD	529
+#513			ADVX	--		-	538
+#514			ADVX	--		-	538
+#515			ADJX	--		HD	538
+#516			ADJX	--		-	530
+#517			ADJX	--		-	533
+#518			ADJX	--		-	531
+#519			ADJX	--		-	534
+#520			DM	--		--	0
+#521			VF	--		-	532
+#522			LK	--		-	532
+#523			MF	--		-	532
+#524			VC	--		-	532
+#525			VF	--		-	542
+#526			LK	--		-	542
+#527			MF	--		-	542
+#528			VF	--		-	540
+#529			LK	--		-	540
+#530			NX	--		HD	533
+#531			NX	--		HD	534
+#532			SIMPX	--		--	0
+#533			NX	--		HD	535
+#534			NX	--		HD	536
+#535			PX	--		-	537
+#536			PX	--		-	537
+#537			PX	--		-	538
+#538			ADJX	--		V-MOD	539
+#539			MF	--		-	540
+#540			SIMPX	--		OS	541
+#541			NF	--		-	542
+#542			SIMPX	--		--	0
+#EOS 150
+#BOS 151 3 989228412 1 %% <g296acn1_013_AJF_380000>
+gut			ITJ	--		-	500
+,			$,	--		--	0
+das			PDS	--		HD	501
+klingt			VVFIN	--		HD	502
+nicht			PTKNEG	--		HD	503
+schlecht		ADJD	--		HD	504
+,			$,	--		--	0
+weil			KOUS	--		-	536
+wenn			KOUS	--		-	505
+Sie			PPER	--		HD	506
+da			ADV	--		HD	507
+noch			ADV	--		HD	508
+Ihren			PPOSAT	--		-	509
+Termin			NN	--		HD	509
+in			APPR	--		-	525
+der			ART	--		-	510
+Früh			NN	--		HD	510
+wahrnehmen		VVINF	--		HD	511
+müssen			VMFIN	--		HD	512
+,			$,	--		--	0
+dann			ADV	--		HD	513
+nehmen			VVFIN	--		HD	514
+wir			PPER	--		HD	515
+doch			ADV	--		HD	516
+da			ADV	--		HD	517
+einfach			ADV	--		HD	518
+mal			ADV	--		HD	519
+so			ADV	--		HD	520
+den			ART	--		-	521
+späteren		NN	--		HD	521
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		ON	522
+#502			VXFIN	--		HD	523
+#503			ADVX	--		MOD	524
+#504			ADJX	--		PRED	524
+#505			C	--		-	533
+#506			NX	--		ON	532
+#507			ADVX	--		MOD	532
+#508			ADVX	--		MOD	532
+#509			NX	--		HD	531
+#510			NX	--		HD	525
+#511			VXINF	--		OV	526
+#512			VXFIN	--		HD	526
+#513			ADVX	--		MOD	527
+#514			VXFIN	--		HD	528
+#515			NX	--		ON	529
+#516			ADVX	--		MOD	529
+#517			ADVX	--		MOD	529
+#518			ADVX	--		MOD	529
+#519			ADVX	--		MOD	529
+#520			ADVX	--		MOD	529
+#521			NX	--		OA	529
+#522			VF	--		-	530
+#523			LK	--		-	530
+#524			MF	--		-	530
+#525			PX	--		-	531
+#526			VC	--		-	533
+#527			VF	--		-	535
+#528			LK	--		-	535
+#529			MF	--		-	535
+#530			SIMPX	--		-	536
+#531			NX	--		OA	532
+#532			MF	--		-	533
+#533			SIMPX	--		MOD	534
+#534			LV	--		-	535
+#535			SIMPX	--		-	536
+#536			P-SIMPX	--		--	0
+#EOS 151
+#BOS 152 3 959078513 1 %% <g296acn1_013_AJF_380000>
+da			ADV	--		HD	500
+können			VMFIN	--		HD	501
+wir			PPER	--		HD	502
+,			$,	--		--	0
+wenn			KOUS	--		-	503
+wir			PPER	--		HD	504
+dann			ADV	--		HD	505
+wie			PWAV	--		HD	506
+lang			ADJD	--		HD	518
+denken			VVFIN	--		HD	507
+Sie			PPER	--		HD	508
+,			$,	--		--	0
+daß			KOUS	--		-	509
+Sie			PPER	--		HD	510
+Zeit			NN	--		HD	511
+brauchen		VVFIN	--		HD	512
+für			APPR	--		-	523
+Ihre			PPOSAT	--		-	513
+Besprechung		NN	--		HD	513
+?			$.	--		--	0
+#500			ADVX	--		MOD	514
+#501			VXFIN	--		HD	515
+#502			NX	--		ON	516
+#503			C	--		-	524
+#504			NX	--		ON	517
+#505			ADVX	--		MOD	517
+#506			ADVX	--		-	518
+#507			VXFIN	--		HD	519
+#508			NX	--		ON	520
+#509			C	--		-	528
+#510			NX	--		ON	521
+#511			NX	--		OA	521
+#512			VXFIN	--		HD	522
+#513			NX	--		HD	523
+#514			VF	--		-	529
+#515			LK	--		-	529
+#516			MF	--		-	529
+#517			MF	--		-	524
+#518			ADJX	--		HD	530
+#519			LK	--		-	525
+#520			MF	--		-	525
+#521			MF	--		-	528
+#522			VC	--		-	528
+#523			PX	--		OA-MOD	526
+#524			SIMPX	--		MOD	527
+#525			SIMPX	--		--	0
+#526			NF	--		-	528
+#527			NF	--		-	529
+#528			SIMPX	--		-	530
+#529			SIMPX	--		--	0
+#530			ADJX	--		--	0
+#EOS 152
+#BOS 153 3 958557246 1 %% <g296acn2_014_AJG_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+ich			PPER	--		HD	501
+würde			VAFIN	--		HD	502
+bis			APPR	--		-	518
+zehn			CARD	--		HD	503
+Uhr			NN	--		HD	515
+beim			APPRART	--		-	516
+Zahnarzt		NN	--		HD	504
+einfach			ADV	--		HD	505
+mal			ADV	--		HD	506
+ja			PTKANT	--		-	507
+,			$,	--		--	0
+genau			ITJ	--		-	508
+,			$,	--		--	0
+einfach			ADV	--		HD	509
+mal			ADV	--		HD	510
+einplanen		VVINF	--		HD	511
+.			$.	--		--	0
+#500			ADVX	--		-	512
+#501			NX	--		ON	513
+#502			VXFIN	--		HD	514
+#503			ADJX	--		-	515
+#504			NX	--		HD	516
+#505			ADVX	--		--	0
+#506			ADVX	--		--	0
+#507			DM	--		--	0
+#508			DM	--		--	0
+#509			ADVX	--		MOD	519
+#510			ADVX	--		MOD	519
+#511			VXINF	--		OV	517
+#512			DM	--		--	0
+#513			VF	--		-	520
+#514			LK	--		-	520
+#515			NX	--		HD	518
+#516			PX	--		V-MOD	519
+#517			VC	--		-	520
+#518			PX	--		OPP	519
+#519			MF	--		-	520
+#520			SIMPX	--		--	0
+#EOS 153
+#BOS 154 4 950778904 1 %% <g296acn2_014_AJG_380000>
+und			KON	--		-	500
+also			ADV	--		HD	501
+,			$,	--		--	0
+mittags			ADV	--		HD	502
+könnten			VMFIN	--		HD	503
+wir			PPER	--		HD	504
+zum			APPRART	--		-	510
+Beispiel		NN	--		HD	505
+losfliegen		VVINF	--		HD	506
+.			$.	--		--	0
+#500			KOORD	--		-	513
+#501			ADVX	--		-	507
+#502			ADVX	--		V-MOD	508
+#503			VXFIN	--		HD	509
+#504			NX	--		ON	512
+#505			NX	--		HD	510
+#506			VXINF	--		OV	511
+#507			DM	--		--	0
+#508			VF	--		-	513
+#509			LK	--		-	513
+#510			PX	--		MOD	512
+#511			VC	--		-	513
+#512			MF	--		-	513
+#513			SIMPX	--		--	0
+#EOS 154
+#BOS 155 4 950778958 1 %% <g296acn2_014_AJG_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+die			ART	--		-	501
+Flugzeit		NN	--		HD	501
+beträgt			VVFIN	--		HD	502
+ja			ADV	--		HD	503
+auch			ADV	--		HD	504
+bloß			ADV	--		HD	505
+also			ADV	--		HD	506
+eine			ART	--		-	515
+gute			ADJA	--		HD	507
+Stunde			NN	--		HD	515
+,			$,	--		--	0
+siebzig			CARD	--		HD	508
+Minuten			NN	--		HD	516
+,			$,	--		--	0
+sehe			VVFIN	--		HD	509
+ich			PPER	--		HD	510
+hier			ADV	--		HD	511
+.			$.	--		--	0
+#500			ADVX	--		-	512
+#501			NX	--		ON	513
+#502			VXFIN	--		HD	514
+#503			ADVX	--		MOD	519
+#504			ADVX	--		MOD	519
+#505			ADVX	--		MOD	519
+#506			ADVX	--		MOD	519
+#507			ADJX	--		-	515
+#508			ADJX	--		-	516
+#509			VXFIN	--		HD	517
+#510			NX	--		ON	518
+#511			ADVX	--		MOD	518
+#512			DM	--		--	0
+#513			VF	--		-	521
+#514			LK	--		-	521
+#515			NX	--		OA	519
+#516			NX	--		OA	520
+#517			LK	--		-	522
+#518			MF	--		-	522
+#519			MF	--		-	521
+#520			VF	--		-	522
+#521			SIMPX	--		--	0
+#522			SIMPX	--		--	0
+#EOS 155
+#BOS 156 4 950779096 1 %% <g296acn1_015_AJF_380000>
+ach			ITJ	--		-	500
+Zahnarzt		NN	--		HD	501
+haben			VAFIN	--		HD	502
+Sie			PPER	--		HD	503
+,			$,	--		--	0
+ja			PTKANT	--		-	504
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		OA	505
+#502			VXFIN	--		HD	506
+#503			NX	--		ON	507
+#504			DM	--		--	0
+#505			VF	--		-	508
+#506			LK	--		-	508
+#507			MF	--		-	508
+#508			SIMPX	--		--	0
+#EOS 156
+#BOS 157 3 985612962 1 %% <g296acn1_016_AJF_380000>
+,			$,	--		--	0
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+wir			PPER	--		HD	501
+müssen			VMFIN	--		HD	502
+bedenken		VVINF	--		HD	503
+,			$,	--		--	0
+daß			KOUS	--		-	504
+das			ART	--		-	505
+Einchecken		NN	--		HD	505
+und			KON	--		-	515
+so			ADV	--		HD	506
+,			$,	--		--	0
+et			FM	--		-	517
+cetera			FM	--		HD	507
+,			$,	--		--	0
+auch			ADV	--		HD	508
+noch			ADV	--		HD	509
+ein			ART	--		-	510
+bißchen			PIS	--		HD	510
+dauert			VVFIN	--		HD	511
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		ON	512
+#502			VXFIN	--		HD	513
+#503			VXINF	--		OV	514
+#504			C	--		-	519
+#505			NX	--		-	515
+#506			ADVX	--		-	515
+#507			ADVX	--		-	517
+#508			ADVX	--		MOD	518
+#509			ADVX	--		MOD	518
+#510			NX	--		V-MOD	518
+#511			VXFIN	--		HD	516
+#512			VF	--		-	521
+#513			LK	--		-	521
+#514			VC	--		-	521
+#515			NX	--		-	517
+#516			VC	--		-	519
+#517			NX	--		ON	518
+#518			MF	--		-	519
+#519			SIMPX	--		OS	520
+#520			NF	--		-	521
+#521			SIMPX	--		--	0
+#EOS 157
+#BOS 158 3 958557944 1 %% <g296acn1_016_AJF_380000> Verb fehlt
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+wenn			KOUS	--		-	501
+wir			PPER	--		HD	502
+zwölf			CARD	--		HD	503
+Uhr			NN	--		HD	510
+losfliegen		VVFIN	--		HD	504
+,			$,	--		--	0
+dann			ADV	--		HD	505
+wir			PPER	--		HD	506
+wahrscheinlich		ADV	--		HD	507
+dreizehn		CARD	--		HD	508
+Uhr			NN	--		HD	513
+da			ADV	--		HD	509
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			C	--		-	516
+#502			NX	--		ON	514
+#503			ADJX	--		-	510
+#504			VXFIN	--		HD	511
+#505			ADVX	--		MOD	512
+#506			NX	--		ON	515
+#507			ADVX	--		MOD	515
+#508			ADJX	--		-	513
+#509			ADVX	--		PRED	515
+#510			NX	--		V-MOD	514
+#511			VC	--		-	516
+#512			VF	--		-	518
+#513			NX	--		V-MOD	515
+#514			MF	--		-	516
+#515			MF	--		-	518
+#516			SIMPX	--		MOD	517
+#517			LV	--		-	518
+#518			SIMPX	--		--	0
+#EOS 158
+#BOS 159 4 950780222 1 %% <g296acn1_016_AJF_380000>
+bis			KOUS	--		-	500
+wir			PPER	--		HD	501
+raus			ADV	--		HD	502
+sind			VAFIN	--		HD	503
+,			$,	--		--	0
+dreizehn		CARD	--		HD	504
+dreißig			CARD	--		HD	505
+,			$,	--		--	0
+das			PDS	--		HD	506
+könnte			VMFIN	--		HD	507
+ein			ART	--		-	508
+bißchen			PIS	--		HD	508
+spät			ADJD	--		HD	515
+werden			VAINF	--		HD	509
+.			$.	--		--	0
+#500			C	--		-	519
+#501			NX	--		ON	510
+#502			ADVX	--		PRED	510
+#503			VXFIN	--		HD	511
+#504			NX	--		HD	512
+#505			ADJX	--		-	512
+#506			NX	--		ON	513
+#507			VXFIN	--		HD	514
+#508			NX	--		-	515
+#509			VXINF	--		OV	516
+#510			MF	--		-	519
+#511			VC	--		-	519
+#512			NX	--		V-MOD	517
+#513			VF	--		-	521
+#514			LK	--		-	521
+#515			ADJX	--		PRED	518
+#516			VC	--		-	521
+#517			NF	--		-	519
+#518			MF	--		-	521
+#519			SIMPX	--		MOD	520
+#520			LV	--		-	521
+#521			SIMPX	--		--	0
+#EOS 159
+#BOS 160 4 950780276 1 %% <g296acn1_016_AJF_380000>
+und			KON	--		-	500
+wann			PWAV	--		HD	501
+müssen			VMFIN	--		HD	502
+Sie			PPER	--		HD	503
+denn			ADV	--		HD	504
+wieder			ADV	--		HD	505
+zurück			PTKVZ	--		VPT	506
+?			$.	--		--	0
+#500			KOORD	--		-	510
+#501			PX	--		V-MOD	507
+#502			VXFIN	--		HD	508
+#503			NX	--		ON	509
+#504			ADVX	--		MOD	509
+#505			ADVX	--		MOD	509
+#506			VC	--		-	510
+#507			VF	--		-	510
+#508			LK	--		-	510
+#509			MF	--		-	510
+#510			SIMPX	--		--	0
+#EOS 160
+#BOS 161 4 950780298 1 %% <g296acn1_016_AJF_380000>
+müssen			VMFIN	--		HD	500
+Sie			PPER	--		HD	501
+#500			VXFIN	--		HD	502
+#501			NX	--		ON	503
+#502			LK	--		-	504
+#503			MF	--		-	504
+#504			SIMPX	--		--	0
+#EOS 161
+#BOS 162 3 958558323 1 %% <g296acn2_017_AJG_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+es			PPER	--		HD	501
+würde			VAFIN	--		HD	502
+bei			APPR	--		-	515
+mir			PPER	--		HD	503
+reichen			VVINF	--		HD	504
+,			$,	--		--	0
+wenn			KOUS	--		-	505
+ich			PPER	--		HD	506
+am			APPRART	--		--	0
+zum			APPRART	--		-	517
+Beispiel		NN	--		HD	507
+Freitag			NN	--		HD	508
+morgen			ADV	--		HD	509
+zurückfliegen		VVINF	--		HD	510
+würde			VAFIN	--		HD	511
+.			$.	--		--	0
+#500			ADVX	--		-	512
+#501			NX	--		ON	513
+#502			VXFIN	--		HD	514
+#503			NX	--		HD	515
+#504			VXINF	--		OV	516
+#505			C	--		-	522
+#506			NX	--		ON	521
+#507			NX	--		HD	517
+#508			NX	--		HD	518
+#509			ADVX	--		-	518
+#510			VXINF	--		OV	519
+#511			VXFIN	--		HD	519
+#512			DM	--		--	0
+#513			VF	--		-	524
+#514			LK	--		-	524
+#515			PX	--		FOPP	520
+#516			VC	--		-	524
+#517			PX	--		MOD	521
+#518			NX	--		V-MOD	521
+#519			VC	--		-	522
+#520			MF	--		-	524
+#521			MF	--		-	522
+#522			SIMPX	--		MOD	523
+#523			NF	--		-	524
+#524			SIMPX	--		--	0
+#EOS 162
+#BOS 163 3 958558383 1 %% <g296acn2_019_AJG_380000>
+beziehungsweise		KON	--		-	500
+Donnerstag		NN	--		HD	501
+würde			VAFIN	--		HD	502
+ja			ADV	--		HD	503
+auch			ADV	--		HD	504
+gehen			VVINF	--		HD	505
+,			$,	--		--	0
+dann			ADV	--		HD	506
+hätten			VAFIN	--		HD	507
+wir			PPER	--		HD	508
+den			ART	--		-	520
+ganzen			ADJA	--		HD	509
+Mittwoch		NN	--		HD	520
+da			ADV	--		HD	510
+zum			APPRART	--		-	521
+Arbeiten		NN	--		HD	511
+und			KON	--		-	525
+halt			ADV	--		HD	512
+den			ART	--		-	522
+halben			ADJA	--		HD	513
+Donnerstag		NN	--		HD	522
+.			$.	--		--	0
+#500			KOORD	--		-	523
+#501			NX	--		ON	514
+#502			VXFIN	--		HD	515
+#503			ADVX	--		MOD	516
+#504			ADVX	--		MOD	516
+#505			VXINF	--		OV	517
+#506			ADVX	--		MOD	518
+#507			VXFIN	--		HD	519
+#508			NX	--		ON	524
+#509			ADJX	--		-	520
+#510			ADVX	--		MOD	524
+#511			NX	--		HD	521
+#512			ADVX	--		-	522
+#513			ADJX	--		-	522
+#514			VF	--		-	523
+#515			LK	--		-	523
+#516			MF	--		-	523
+#517			VC	--		-	523
+#518			VF	--		-	527
+#519			LK	--		-	527
+#520			NX	--		OA	524
+#521			PX	--		MOD	524
+#522			NX	--		-	525
+#523			SIMPX	--		--	0
+#524			MF	--		-	527
+#525			NX	--		OAK	526
+#526			NF	--		-	527
+#527			SIMPX	--		--	0
+#EOS 163
+#BOS 164 4 950780668 1 %% <g296acn1_020_AJF_380000>
+ja			PTKANT	--		-	500
+.			$.	--		--	0
+#500			DM	--		--	0
+#EOS 164
+#BOS 165 3 958558414 1 %% <g296acn1_020_AJF_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+das			PDS	--		HD	501
+wäre			VAFIN	--		HD	502
+nicht			PTKNEG	--		HD	503
+schlecht		ADJD	--		HD	504
+,			$,	--		--	0
+ja			PTKANT	--		-	505
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		ON	506
+#502			VXFIN	--		HD	507
+#503			ADVX	--		MOD	508
+#504			ADJX	--		PRED	508
+#505			DM	--		--	0
+#506			VF	--		-	509
+#507			LK	--		-	509
+#508			MF	--		-	509
+#509			SIMPX	--		--	0
+#EOS 165
+#BOS 166 3 958558443 1 %% <g296acn1_020_AJF_380000>
+gut			ITJ	--		-	500
+,			$,	--		--	0
+bei			APPR	--		-	513
+den			ART	--		-	510
+nächsten		ADJA	--		HD	501
+Terminen		NN	--		HD	510
+,			$,	--		--	0
+ja			PTKANT	--		-	502
+,			$,	--		--	0
+sieht			VVFIN	--		HD	503
+es			PPER	--		HD	504
+wahrscheinlich		ADV	--		HD	505
+auch			ADV	--		HD	506
+nicht			PTKNEG	--		HD	507
+besser			ADJD	--		HD	508
+aus			PTKVZ	--		VPT	509
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			ADJX	--		-	510
+#502			DM	--		--	0
+#503			VXFIN	--		HD	511
+#504			NX	--		ON	512
+#505			ADVX	--		MOD	512
+#506			ADVX	--		MOD	512
+#507			ADVX	--		MOD	512
+#508			ADJX	--		PRED	512
+#509			VC	--		-	515
+#510			NX	--		HD	513
+#511			LK	--		-	515
+#512			MF	--		-	515
+#513			PX	--		FOPP	514
+#514			VF	--		-	515
+#515			SIMPX	--		--	0
+#EOS 166
+#BOS 167 4 950781403 1 %% <g296acn1_020_AJF_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+ich			PPER	--		HD	501
+denke			VVFIN	--		HD	502
+mal			ADV	--		HD	503
+,			$,	--		--	0
+das			PDS	--		HD	504
+ist			VAFIN	--		HD	505
+die			ART	--		-	515
+beste			ADJA	--		HD	506
+Lösung			NN	--		HD	515
+hier			ADV	--		HD	507
+an			APPR	--		-	516
+dem			ART	--		-	508
+Tag			NN	--		HD	508
+.			$.	--		--	0
+#500			ADVX	--		-	509
+#501			NX	--		ON	510
+#502			VXFIN	--		HD	511
+#503			ADVX	--		MOD	512
+#504			NX	--		ON	513
+#505			VXFIN	--		HD	514
+#506			ADJX	--		-	515
+#507			ADVX	--		MOD	518
+#508			NX	--		HD	516
+#509			DM	--		--	0
+#510			VF	--		-	521
+#511			LK	--		-	521
+#512			MF	--		-	521
+#513			VF	--		-	519
+#514			LK	--		-	519
+#515			NX	--		PRED	517
+#516			PX	--		V-MOD	518
+#517			MF	--		-	519
+#518			NF	--		-	519
+#519			SIMPX	--		OS	520
+#520			NF	--		-	521
+#521			SIMPX	--		--	0
+#EOS 167
+#BOS 168 4 950781426 1 %% <g296acn1_020_AJF_380000>
+was			PWS	--		HD	500
+meinen			VVFIN	--		HD	501
+Sie			PPER	--		HD	502
+so			ADV	--		HD	503
+?			$.	--		--	0
+#500			NX	--		OA	504
+#501			VXFIN	--		HD	505
+#502			NX	--		ON	506
+#503			ADVX	--		MOD	506
+#504			VF	--		-	507
+#505			LK	--		-	507
+#506			MF	--		-	507
+#507			SIMPX	--		--	0
+#EOS 168
+#BOS 169 4 950781505 1 %% <g296acn1_020_AJF_380000>
+wie			PWAV	--		HD	500
+sieht			VVFIN	--		HD	501
+es			PPER	--		HD	502
+oder			KON	--		-	503
+wäre			VAFIN	--		HD	504
+es			PPER	--		HD	505
+Ihnen			PPER	--		HD	506
+Februar			NN	--		HD	507
+,			$,	--		--	0
+März			NN	--		HD	508
+lieber			ADJD	--		HD	509
+?			$.	--		--	0
+#500			ADJX	--		PRED	510
+#501			VXFIN	--		HD	511
+#502			NX	--		ON	512
+#503			KOORD	--		-	517
+#504			VXFIN	--		HD	513
+#505			NX	--		ON	516
+#506			NX	--		OD	516
+#507			NX	--		-	514
+#508			NX	--		-	514
+#509			ADJX	--		PRED	516
+#510			VF	--		-	515
+#511			LK	--		-	515
+#512			MF	--		-	515
+#513			LK	--		-	517
+#514			NX	--		V-MOD	516
+#515			SIMPX	--		--	0
+#516			MF	--		-	517
+#517			SIMPX	--		--	0
+#EOS 169
+#BOS 170 4 950781544 1 %% <g296acn1_020_AJF_380000>
+ich			PPER	--		HD	500
+meine			VVFIN	--		HD	501
+,			$,	--		--	0
+wir			PPER	--		HD	502
+sind			VAFIN	--		HD	503
+ja			ADV	--		HD	504
+da			ADV	--		HD	505
+ganz			ADV	--		HD	506
+flexibel		ADJD	--		HD	511
+.			$.	--		--	0
+#500			NX	--		ON	507
+#501			VXFIN	--		HD	508
+#502			NX	--		ON	509
+#503			VXFIN	--		HD	510
+#504			ADVX	--		MOD	512
+#505			ADVX	--		MOD	512
+#506			ADVX	--		-	511
+#507			VF	--		-	515
+#508			LK	--		-	515
+#509			VF	--		-	513
+#510			LK	--		-	513
+#511			ADJX	--		PRED	512
+#512			MF	--		-	513
+#513			SIMPX	--		OS	514
+#514			NF	--		-	515
+#515			SIMPX	--		--	0
+#EOS 170
+#BOS 171 3 959622397 1 %% <g296acn2_022_AJG_380000>
+nee			PTKANT	--		-	500
+,			$,	--		--	0
+ich			PPER	--		HD	501
+habe			VAFIN	--		HD	502
+eigentlich		ADV	--		HD	503
+jede			PIDAT	--		-	504
+Woche			NN	--		HD	504
+zwei			CARD	--		HD	505
+Termine			NN	--		HD	519
+und			KON	--		-	506
+die			PDS	--		HD	507
+liegen			VVFIN	--		HD	508
+sonst			ADV	--		HD	509
+eigentlich		ADV	--		HD	510
+auch			ADV	--		HD	511
+noch			ADV	--		HD	512
+schlechter		ADJA	--		HD	513
+als			KOKOM	--		-	522
+der			ART	--		-	514
+Zahnarzttermin		NN	--		HD	514
+gleich			ADV	--		HD	515
+morgens			ADV	--		HD	516
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		ON	517
+#502			VXFIN	--		HD	518
+#503			ADVX	--		MOD	523
+#504			NX	--		V-MOD	523
+#505			ADJX	--		-	519
+#506			KOORD	--		-	527
+#507			NX	--		ON	520
+#508			VXFIN	--		HD	521
+#509			ADVX	--		MOD	526
+#510			ADVX	--		MOD	526
+#511			ADVX	--		MOD	526
+#512			ADVX	--		MOD	526
+#513			ADJX	--		HD	524
+#514			NX	--		HD	522
+#515			ADVX	--		-	522
+#516			ADVX	--		-	522
+#517			VF	--		-	525
+#518			LK	--		-	525
+#519			NX	--		OA	523
+#520			VF	--		-	527
+#521			LK	--		-	527
+#522			NX	--		-	524
+#523			MF	--		-	525
+#524			ADJX	--		PRED	526
+#525			SIMPX	--		--	0
+#526			MF	--		-	527
+#527			SIMPX	--		--	0
+#EOS 171
+#BOS 172 4 950781993 1 %% <g296acn2_022_AJG_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+das			PDS	--		HD	501
+wäre			VAFIN	--		HD	502
+auch			ADV	--		HD	503
+mir			PPER	--		HD	504
+ganz			ADV	--		HD	505
+recht			ADJD	--		HD	509
+.			$.	--		--	0
+#500			ADVX	--		-	506
+#501			NX	--		ON	507
+#502			VXFIN	--		HD	508
+#503			ADVX	--		MOD	510
+#504			NX	--		OD	510
+#505			ADVX	--		-	509
+#506			DM	--		--	0
+#507			VF	--		-	511
+#508			LK	--		-	511
+#509			ADJX	--		PRED	510
+#510			MF	--		-	511
+#511			SIMPX	--		--	0
+#EOS 172
+#BOS 173 4 950782250 1 %% <g296acn2_022_AJG_380000>
+tja			ITJ	--		-	500
+jetzt			ADV	--		HD	501
+müßten		VMFIN	--		HD	502
+wir			PPER	--		HD	503
+noch			ADV	--		HD	504
+eine			ART	--		-	505
+Zeit			NN	--		HD	505
+ausmachen		VVINF	--		HD	506
+,			$,	--		--	0
+für			APPR	--		-	518
+den			ART	--		-	507
+Flug			NN	--		HD	507
+,			$,	--		--	0
+damit			KOUS	--		-	508
+wir			PPER	--		HD	509
+den			PDS	--		HD	510
+nachher			ADV	--		HD	511
+buchen			VVINF	--		HD	512
+können			VMFIN	--		HD	513
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			ADVX	--		MOD	514
+#502			VXFIN	--		HD	515
+#503			NX	--		ON	516
+#504			ADVX	--		MOD	516
+#505			NX	--		OA	516
+#506			VXINF	--		OV	517
+#507			NX	--		HD	518
+#508			C	--		-	521
+#509			NX	--		ON	519
+#510			NX	--		OA	519
+#511			ADVX	--		V-MOD	519
+#512			VXINF	--		OV	520
+#513			VXFIN	--		HD	520
+#514			VF	--		-	523
+#515			LK	--		-	523
+#516			MF	--		-	523
+#517			VC	--		-	523
+#518			PX	--		OA-MOD	522
+#519			MF	--		-	521
+#520			VC	--		-	521
+#521			SIMPX	--		MOD	522
+#522			NF	--		-	523
+#523			SIMPX	--		--	0
+#EOS 173
+#BOS 174 4 950782262 1 %% <g296acn1_024_AJF_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+also			ADV	--		HD	501
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			ADVX	--		-	502
+#502			DM	--		--	0
+#EOS 174
+#BOS 175 4 950782474 1 %% <g296acn2_025_AJG_380000>
+würden			VAFIN	--		HD	500
+wir			PPER	--		HD	501
+so			ADV	--		HD	502
+um			APPR	--		-	517
+dreizehn		CARD	--		HD	503
+Uhr			NN	--		HD	511
+fünf			CARD	--		HD	504
+den			ART	--		-	505
+Flug			NN	--		HD	505
+zum			APPRART	--		-	512
+Beispiel		NN	--		HD	506
+nehmen			VVINF	--		HD	507
+,			$,	--		--	0
+oder			KON	--		-	520
+um			APPR	--		-	518
+vierzehn		CARD	--		HD	508
+Uhr			NN	--		HD	514
+fünf			CARD	--		HD	509
+.			$.	--		--	0
+#500			VXFIN	--		HD	510
+#501			NX	--		ON	519
+#502			ADVX	--		-	517
+#503			ADJX	--		-	511
+#504			ADJX	--		-	515
+#505			NX	--		OA	519
+#506			NX	--		HD	512
+#507			VXINF	--		OV	513
+#508			ADJX	--		-	514
+#509			ADJX	--		-	516
+#510			LK	--		-	522
+#511			NX	--		HD	515
+#512			PX	--		MOD	519
+#513			VC	--		-	522
+#514			NX	--		HD	516
+#515			NX	--		HD	517
+#516			NX	--		HD	518
+#517			PX	--		V-MOD	519
+#518			PX	--		-	520
+#519			MF	--		-	522
+#520			PX	--		V-MODK	521
+#521			NF	--		-	522
+#522			SIMPX	--		--	0
+#EOS 175
+#BOS 176 4 950782760 1 %% <g296acn1_026_AJF_380000>
+dreizehn		CARD	--		HD	500
+Uhr			NN	--		HD	503
+fünf			CARD	--		HD	501
+,			$,	--		--	0
+ja			PTKANT	--		-	502
+.			$.	--		--	0
+#500			ADJX	--		-	503
+#501			ADJX	--		-	504
+#502			DM	--		--	0
+#503			NX	--		HD	504
+#504			NX	--		--	0
+#EOS 176
+#BOS 177 4 950782842 1 %% <g296acn1_026_AJF_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+obwohl			KOUS	--		-	501
+,			$,	--		--	0
+wir			PPER	--		HD	502
+haben			VAFIN	--		HD	503
+ja			ADV	--		HD	504
+dann			ADV	--		HD	505
+Mittwoch		NN	--		HD	506
+,			$,	--		--	0
+Donnerstag		NN	--		HD	507
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			DM	--		--	0
+#502			NX	--		ON	508
+#503			VXFIN	--		HD	509
+#504			ADVX	--		MOD	511
+#505			ADVX	--		MOD	511
+#506			NX	--		-	510
+#507			NX	--		-	510
+#508			VF	--		-	512
+#509			LK	--		-	512
+#510			NX	--		OA	511
+#511			MF	--		-	512
+#512			SIMPX	--		--	0
+#EOS 177
+#BOS 178 3 958558756 1 %% <g296acn1_026_AJF_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+das			PDS	--		HD	501
+ist			VAFIN	--		HD	502
+ja			ADV	--		HD	503
+ja			PTKANT	--		-	504
+,			$,	--		--	0
+ja			PTKANT	--		-	505
+,			$,	--		--	0
+nehmen			VVFIN	--		HD	506
+wir			PPER	--		HD	507
+vierzehn		CARD	--		HD	508
+Uhr			NN	--		HD	521
+fünf			CARD	--		HD	509
+,			$,	--		--	0
+dann			ADV	--		HD	510
+ist			VAFIN	--		HD	511
+das			PDS	--		HD	512
+alles			PIS	--		HD	513
+ein			ART	--		-	514
+bissel			PIS	--		HD	514
+entspannter		ADJD	--		HD	525
+für			APPR	--		-	526
+Sie			PPER	--		HD	515
+.			$.	--		--	0
+#500			ADVX	--		-	516
+#501			NX	--		ON	517
+#502			VXFIN	--		HD	518
+#503			ADVX	--		MOD	519
+#504			DM	--		--	0
+#505			DM	--		--	0
+#506			VXFIN	--		HD	520
+#507			NX	--		ON	531
+#508			ADJX	--		-	521
+#509			ADJX	--		-	528
+#510			ADVX	--		MOD	522
+#511			VXFIN	--		HD	523
+#512			NX	--		HD	524
+#513			NX	--		-	524
+#514			NX	--		-	525
+#515			NX	--		HD	526
+#516			DM	--		--	0
+#517			VF	--		-	527
+#518			LK	--		-	527
+#519			MF	--		-	527
+#520			LK	--		-	533
+#521			NX	--		HD	528
+#522			VF	--		-	532
+#523			LK	--		-	532
+#524			NX	--		ON	529
+#525			ADJX	--		PRED	529
+#526			PX	--		FOPP	530
+#527			SIMPX	--		--	0
+#528			NX	--		OA	531
+#529			MF	--		-	532
+#530			NF	--		-	532
+#531			MF	--		-	533
+#532			SIMPX	--		--	0
+#533			SIMPX	--		--	0
+#EOS 178
+#BOS 179 4 950784647 1 %% <g296acn2_027_AJG_380000>
+prima			ITJ	--		-	500
+.			$.	--		--	0
+#500			DM	--		--	0
+#EOS 179
+#BOS 180 4 950784658 1 %% <g296acn2_027_AJG_380000>
+jetzt			ADV	--		HD	500
+noch			ADV	--		HD	501
+den			ART	--		-	502
+Rückflug		NN	--		HD	502
+.			$.	--		--	0
+#500			ADVX	--		-	503
+#501			ADVX	--		-	503
+#502			NX	--		HD	503
+#503			NX	--		--	0
+#EOS 180
+#BOS 181 4 950784662 1 %% <g296acn1_028_AJF_380000>
+Rückflug		NN	--		HD	500
+.			$.	--		--	0
+#500			NX	--		--	0
+#EOS 181
+#BOS 182 4 950784683 1 %% <g296acn1_028_AJF_380000>
+also			ADV	--		HD	500
+,			$,	--		--	0
+wir			PPER	--		HD	501
+brauchen		VVFIN	--		HD	502
+wahrscheinlich		ADV	--		HD	503
+Donnerstag		NN	--		HD	504
+schon			ADV	--		HD	505
+.			$.	--		--	0
+#500			ADVX	--		-	506
+#501			NX	--		ON	507
+#502			VXFIN	--		HD	508
+#503			ADVX	--		MOD	509
+#504			NX	--		OA	509
+#505			ADVX	--		MOD	509
+#506			DM	--		--	0
+#507			VF	--		-	510
+#508			LK	--		-	510
+#509			MF	--		-	510
+#510			SIMPX	--		--	0
+#EOS 182
+#BOS 183 3 958558823 1 %% <g296acn1_028_AJF_380000>
+aha			ITJ	--		-	500
+ab			APPR	--		--	0
+am			APPRART	--		-	510
+Abend			NN	--		HD	501
+sehe			VVFIN	--		HD	502
+ich			PPER	--		HD	503
+hier			ADV	--		HD	504
+grade			ADV	--		HD	505
+ab			APPR	--		-	515
+siebzehn		CARD	--		HD	506
+zwanzig			CARD	--		HD	507
+bis			APPR	--		-	517
+einundzwanzig		CARD	--		HD	508
+Uhr			NN	--		HD	513
+zwanzig			CARD	--		HD	509
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		HD	510
+#502			VXFIN	--		HD	511
+#503			NX	--		ON	519
+#504			ADVX	--		MOD	519
+#505			ADVX	--		MOD	519
+#506			NX	--		HD	512
+#507			ADJX	--		-	512
+#508			ADJX	--		-	513
+#509			ADJX	--		-	516
+#510			PX	--		OPP	514
+#511			LK	--		-	520
+#512			NX	--		HD	515
+#513			NX	--		HD	516
+#514			VF	--		-	520
+#515			PX	--		-	518
+#516			NX	--		HD	517
+#517			PX	--		-	518
+#518			PX	--		OPP-MOD	519
+#519			MF	--		-	520
+#520			SIMPX	--		--	0
+#EOS 183
+#BOS 184 3 989228473 1 %% <g296acn1_028_AJF_380000>
+ja			PTKANT	--		-	500
+weil			KOUS	--		-	501
+wir			PPER	--		HD	502
+brauchen		VVFIN	--		HD	503
+den			ART	--		-	504
+Donnerstag		NN	--		HD	504
+eigentlich		ADV	--		HD	505
+schon			ADV	--		HD	506
+zu			PTKZU	--		HD	507
+arbeiten		VVINF	--		-	507
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			PARORD	--		-	512
+#502			NX	--		ON	508
+#503			VXFIN	--		HD	509
+#504			NX	--		V-MOD	510
+#505			ADVX	--		MOD	510
+#506			ADVX	--		MOD	510
+#507			VXINF	--		OV	511
+#508			VF	--		-	512
+#509			LK	--		-	512
+#510			MF	--		-	512
+#511			VC	--		-	512
+#512			SIMPX	--		--	0
+#EOS 184
+#BOS 185 4 951473836 1 %% <g296acn1_028_AJF_380000>
+was			PWS	--		HD	500
+denken			VVFIN	--		HD	501
+Sie			PPER	--		HD	502
+?			$.	--		--	0
+#500			NX	--		OA	503
+#501			VXFIN	--		HD	504
+#502			NX	--		ON	505
+#503			VF	--		-	506
+#504			LK	--		-	506
+#505			MF	--		-	506
+#506			SIMPX	--		--	0
+#EOS 185
+#BOS 186 3 958559596 1 %% <g296acn1_028_AJF_380000>
+sollten			VMFIN	--		HD	500
+wir			PPER	--		HD	501
+vielleicht		ADV	--		HD	502
+noch			ADV	--		HD	503
+den			PDS	--		HD	504
+um			APPR	--		-	517
+sechzehn		CARD	--		HD	505
+Uhr			NN	--		HD	513
+fünf			CARD	--		HD	506
+nehmen			VVINF	--		HD	507
+oder			KON	--		-	515
+dann			ADV	--		HD	508
+schon			ADV	--		HD	509
+die			PDS	--		HD	510
+die			ART	--		--	0
+Abend			NN	--		HD	511
+.			$.	--		--	0
+#500			VXFIN	--		HD	512
+#501			NX	--		ON	519
+#502			ADVX	--		MOD	519
+#503			ADVX	--		MOD	519
+#504			NX	--		HD	518
+#505			ADJX	--		-	513
+#506			ADJX	--		-	516
+#507			VXINF	--		OV	514
+#508			ADVX	--		-	515
+#509			ADVX	--		-	515
+#510			NX	--		HD	515
+#511			NX	--		--	0
+#512			LK	--		-	520
+#513			NX	--		HD	516
+#514			VC	--		-	520
+#515			NX	--		--	0
+#516			NX	--		HD	517
+#517			PX	--		-	518
+#518			NX	--		OA	519
+#519			MF	--		-	520
+#520			SIMPX	--		--	0
+#EOS 186
+#BOS 187 4 951473952 1 %% <g296acn2_029_AJG_380000>
+prima			ITJ	--		-	500
+.			$.	--		--	0
+#500			DM	--		--	0
+#EOS 187
+#BOS 188 3 958559659 1 %% <g296acn2_030_AJG_380000>
+ich			PPER	--		HD	500
+wäre			VAFIN	--		HD	501
+für			APPR	--		-	518
+die			ART	--		-	502
+Abendflüge		NN	--		HD	502
+,			$,	--		--	0
+also			ADV	--		HD	503
+,			$,	--		--	0
+dann			ADV	--		HD	504
+haben			VAFIN	--		HD	505
+wir			PPER	--		HD	506
+wirklich		ADV	--		HD	507
+auch			ADV	--		HD	508
+,			$,	--		--	0
+also			ADV	--		HD	509
+,			$,	--		--	0
+Luft			NN	--		HD	510
+,			$,	--		--	0
+wenn			KOUS	--		-	511
+es			PPER	--		HD	512
+länger			ADJD	--		HD	513
+dauern			VVINF	--		HD	514
+sollte			VMFIN	--		HD	515
+.			$.	--		--	0
+#500			NX	--		ON	516
+#501			VXFIN	--		HD	517
+#502			NX	--		HD	518
+#503			ADVX	--		-	519
+#504			ADVX	--		MOD	520
+#505			VXFIN	--		HD	521
+#506			NX	--		ON	522
+#507			ADVX	--		MOD	522
+#508			ADVX	--		MOD	522
+#509			ADVX	--		-	523
+#510			NX	--		OA	522
+#511			C	--		-	527
+#512			NX	--		ON	524
+#513			ADJX	--		V-MOD	524
+#514			VXINF	--		OV	525
+#515			VXFIN	--		HD	525
+#516			VF	--		-	528
+#517			LK	--		-	528
+#518			PX	--		PRED	526
+#519			DM	--		--	0
+#520			VF	--		-	530
+#521			LK	--		-	530
+#522			MF	--		-	530
+#523			DM	--		--	0
+#524			MF	--		-	527
+#525			VC	--		-	527
+#526			MF	--		-	528
+#527			SIMPX	--		MOD	529
+#528			SIMPX	--		--	0
+#529			NF	--		-	530
+#530			SIMPX	--		--	0
+#EOS 188
+#BOS 189 3 969290576 1 %% <g296acn2_030_AJG_380000>
+wir			PPER	--		HD	500
+können			VMFIN	--		HD	501
+auch			ADV	--		HD	502
+zum			APPRART	--		-	518
+Beispiel		NN	--		HD	503
+abends			ADV	--		HD	504
+noch			ADV	--		HD	505
+zusammen		ADV	--		HD	506
+Essen			NN	--		HD	507
+gehen			VVINF	--		HD	508
+,			$,	--		--	0
+als			KOKOM	--		-	509
+Abschluß		NN	--		HD	509
+und			KON	--		-	532
+nehmen			VVFIN	--		HD	510
+dann			ADV	--		HD	511
+den			ART	--		-	522
+letzten			ADJA	--		HD	512
+Flug			NN	--		HD	522
+,			$,	--		--	0
+den			PDS	--		HD	513
+um			APPR	--		-	528
+einundzwanzig		CARD	--		HD	514
+Uhr			NN	--		HD	523
+zwanzig			CARD	--		HD	515
+.			$.	--		--	0
+#500			NX	--		ON	516
+#501			VXFIN	--		HD	517
+#502			ADVX	--		MOD	524
+#503			NX	--		HD	518
+#504			ADVX	--		V-MOD	524
+#505			ADVX	--		MOD	524
+#506			ADVX	--		V-MOD	524
+#507			NX	--		V-MOD	524
+#508			VXINF	--		OV	519
+#509			NX	--		MOD	520
+#510			VXFIN	--		HD	521
+#511			ADVX	--		MOD	525
+#512			ADJX	--		-	522
+#513			NX	--		HD	529
+#514			ADJX	--		-	523
+#515			ADJX	--		-	526
+#516			VF	--		-	533
+#517			LK	--		-	527
+#518			PX	--		MOD	524
+#519			VC	--		-	527
+#520			NF	--		-	527
+#521			LK	--		-	531
+#522			NX	--		OA	525
+#523			NX	--		HD	526
+#524			MF	--		-	527
+#525			MF	--		-	531
+#526			NX	--		HD	528
+#527			LKMVCN	--		-	532
+#528			PX	--		-	529
+#529			NX	--		OA-MOD	530
+#530			NF	--		-	531
+#531			LKMN	--		-	532
+#532			FKOORD	--		-	533
+#533			SIMPX	--		--	0
+#EOS 189
+#BOS 190 4 951733284 1 %% <g296acn1_031_AJF_380000>
+,			$,	--		--	0
+genau			ITJ	--		-	500
+,			$,	--		--	0
+haben			VAFIN	--		HD	501
+Sie			PPER	--		HD	502
+recht			ADJD	--		HD	503
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			VXFIN	--		HD	504
+#502			NX	--		ON	505
+#503			ADJX	--		PRED	505
+#504			LK	--		-	506
+#505			MF	--		-	506
+#506			SIMPX	--		--	0
+#EOS 190
+#BOS 191 3 958565935 1 %% <g296acn1_033_AJF_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+und			KON	--		-	501
+was			PWS	--		HD	502
+sagt			VVFIN	--		HD	503
+Ihre			PPOSAT	--		-	504
+Frau			NN	--		HD	504
+dazu			PROP	--		HD	505
+,			$,	--		--	0
+wenn			KOUS	--		-	506
+Sie			PPER	--		HD	507
+so			ADV	--		HD	508
+spät			ADJD	--		HD	513
+heimkommen		VVFIN	--		HD	509
+?			$.	--		--	0
+#500			DM	--		--	0
+#501			KOORD	--		-	518
+#502			NX	--		OA	510
+#503			VXFIN	--		HD	511
+#504			NX	--		ON	512
+#505			PX	--		FOPP	512
+#506			C	--		-	516
+#507			NX	--		ON	515
+#508			ADVX	--		-	513
+#509			VXFIN	--		HD	514
+#510			VF	--		-	518
+#511			LK	--		-	518
+#512			MF	--		-	518
+#513			ADJX	--		V-MOD	515
+#514			VC	--		-	516
+#515			MF	--		-	516
+#516			SIMPX	--		FOPP-MOD	517
+#517			NF	--		-	518
+#518			SIMPX	--		--	0
+#EOS 191
+#BOS 192 4 951733433 1 %% <g296acn2_034_AJG_380000>
+das			PDS	--		HD	500
+das			PDS	--		HD	501
+wird			VAFIN	--		HD	502
+schon			ADV	--		HD	503
+okay			ADJD	--		HD	504
+sein			VAINF	--		HD	505
+.			$.	--		--	0
+#500			NX	--		--	0
+#501			NX	--		ON	506
+#502			VXFIN	--		HD	507
+#503			ADVX	--		MOD	508
+#504			ADJX	--		PRED	508
+#505			VXINF	--		OV	509
+#506			VF	--		-	510
+#507			LK	--		-	510
+#508			MF	--		-	510
+#509			VC	--		-	510
+#510			SIMPX	--		--	0
+#EOS 192
+#BOS 193 3 958566035 1 %% <g296acn2_034_AJG_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+ich			PPER	--		HD	501
+also			ADV	--		HD	502
+,			$,	--		--	0
+das			PDS	--		HD	503
+sind			VAFIN	--		HD	504
+sie			PPER	--		HD	505
+gewohnt			ADJD	--		HD	506
+,			$,	--		--	0
+meine			PPOSAT	--		-	507
+Familie			NN	--		HD	507
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			NX	--		--	0
+#502			ADVX	--		-	508
+#503			NX	--		OA	509
+#504			VXFIN	--		HD	510
+#505			NX	--		ON	511
+#506			ADJX	--		PRED	511
+#507			NX	--		ON-MOD	512
+#508			DM	--		--	0
+#509			VF	--		-	513
+#510			LK	--		-	513
+#511			MF	--		-	513
+#512			NF	--		-	513
+#513			SIMPX	--		--	0
+#EOS 193
+#BOS 194 4 951733514 1 %% <g296acn1_035_AJF_380000>
+okay			ITJ	--		-	500
+.			$.	--		--	0
+#500			DM	--		--	0
+#EOS 194
+#BOS 195 4 951733577 1 %% <g296acn1_035_AJF_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+gut			ITJ	--		-	501
+,			$,	--		--	0
+dann			ADV	--		HD	502
+machen			VVFIN	--		HD	503
+wir			PPER	--		HD	504
+es			PPER	--		HD	505
+so			ADV	--		HD	506
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			DM	--		--	0
+#502			ADVX	--		MOD	507
+#503			VXFIN	--		HD	508
+#504			NX	--		ON	509
+#505			NX	--		OA	509
+#506			ADVX	--		V-MOD	509
+#507			VF	--		-	510
+#508			LK	--		-	510
+#509			MF	--		-	510
+#510			SIMPX	--		--	0
+#EOS 195
+#BOS 196 3 969290620 1 %% <g296acn1_035_AJF_380000>
+dann			ADV	--		HD	500
+gehen			VVFIN	--		HD	501
+wir			PPER	--		HD	502
+noch			ADV	--		HD	503
+ein			ART	--		-	511
+bißchen			PIDAT	--		HD	504
+Essen			NN	--		HD	511
+,			$,	--		--	0
+und			KON	--		-	519
+dann			ADV	--		HD	505
+nehmen			VVFIN	--		HD	506
+wir			PPER	--		HD	507
+den			ART	--		-	514
+letzten			ADJA	--		HD	508
+Flug			NN	--		HD	514
+.			$.	--		--	0
+#500			ADVX	--		MOD	509
+#501			VXFIN	--		HD	510
+#502			NX	--		ON	515
+#503			ADVX	--		MOD	515
+#504			ADJX	--		-	511
+#505			ADVX	--		MOD	512
+#506			VXFIN	--		HD	513
+#507			NX	--		ON	516
+#508			ADJX	--		-	514
+#509			VF	--		-	517
+#510			LK	--		-	517
+#511			NX	--		V-MOD	515
+#512			VF	--		-	518
+#513			LK	--		-	518
+#514			NX	--		OA	516
+#515			MF	--		-	517
+#516			MF	--		-	518
+#517			SIMPX	--		-	519
+#518			SIMPX	--		-	519
+#519			SIMPX	--		--	0
+#EOS 196
+#BOS 197 3 988029334 1 %% <g296acn1_035_AJF_380000>
+aber			KON	--		-	500
+dann			ADV	--		HD	501
+müssen			VMFIN	--		HD	502
+wir			PPER	--		HD	503
+dann			ADV	--		HD	504
+auch			ADV	--		HD	505
+pünktlich		ADJD	--		HD	506
+sein			VAINF	--		HD	507
+,			$,	--		--	0
+nicht			PTKNEG	--		HD	508
+mehr			ADV	--		HD	509
+,			$,	--		--	0
+daß			KOUS	--		-	510
+wir			PPER	--		HD	511
+den			ART	--		-	537
+nächsten		ADJA	--		HD	512
+Tag			NN	--		HD	537
+doch			ADV	--		HD	513
+noch			ADV	--		HD	514
+dort			ADV	--		HD	515
+sitzen			VVINF	--		HD	516
+,			$,	--		--	0
+ich			PPER	--		HD	517
+habe			VAFIN	--		HD	518
+nämlich			ADV	--		HD	519
+im			APPRART	--		-	547
+nächsten		ADJA	--		HD	520
+Tag			NN	--		HD	541
+auch			ADV	--		HD	521
+ein			ART	--		-	522
+Urlaubstag		NN	--		HD	522
+,			$,	--		--	0
+und			KON	--		-	523
+den			PDS	--		HD	524
+möchte			VMFIN	--		HD	525
+ich			PPER	--		HD	526
+dann			ADV	--		HD	527
+doch			ADV	--		HD	528
+noch			ADV	--		HD	529
+einigermaßen		ADV	--		HD	530
+genießen		VVINF	--		HD	531
+.			$.	--		--	0
+#500			KOORD	--		-	553
+#501			ADVX	--		MOD	532
+#502			VXFIN	--		HD	533
+#503			NX	--		ON	534
+#504			ADVX	--		MOD	534
+#505			ADVX	--		MOD	534
+#506			ADJX	--		PRED	534
+#507			VXINF	--		OV	535
+#508			ADVX	--		HD	536
+#509			ADVX	--		-	536
+#510			C	--		-	549
+#511			NX	--		ON	546
+#512			ADJX	--		-	537
+#513			ADVX	--		MOD	546
+#514			ADVX	--		MOD	546
+#515			ADVX	--		V-MOD	546
+#516			VXINF	--		OV	538
+#517			NX	--		ON	539
+#518			VXFIN	--		HD	540
+#519			ADVX	--		MOD	550
+#520			ADJX	--		-	541
+#521			ADVX	--		MOD	550
+#522			NX	--		OA	550
+#523			KOORD	--		-	548
+#524			NX	--		ON	542
+#525			VXFIN	--		HD	543
+#526			NX	--		ON	544
+#527			ADVX	--		MOD	544
+#528			ADVX	--		MOD	544
+#529			ADVX	--		MOD	544
+#530			ADVX	--		V-MOD	544
+#531			VXINF	--		OV	545
+#532			VF	--		-	553
+#533			LK	--		-	553
+#534			MF	--		-	553
+#535			VC	--		-	553
+#536			ADVX	--		--	0
+#537			NX	--		V-MOD	546
+#538			VC	--		-	549
+#539			VF	--		-	552
+#540			LK	--		-	552
+#541			NX	--		HD	547
+#542			VF	--		-	548
+#543			LK	--		-	548
+#544			MF	--		-	548
+#545			VC	--		-	548
+#546			MF	--		-	549
+#547			PX	--		V-MOD	550
+#548			SIMPX	--		--	0
+#549			SIMPX	--		MOD	551
+#550			MF	--		-	552
+#551			NF	--		-	553
+#552			SIMPX	--		--	0
+#553			SIMPX	--		--	0
+#EOS 197
+#BOS 198 3 958568565 1 %% <g296acn2_038_AJG_380000>
+ja			PTKANT	--		-	500
+,			$,	--		--	0
+nee			PTKANT	--		-	501
+,			$,	--		--	0
+abends			ADV	--		HD	502
+am			APPRART	--		-	514
+Freitag			NN	--		HD	503
+gehe			VVFIN	--		HD	504
+ich			PPER	--		HD	505
+dann			ADV	--		HD	506
+in			APPR	--		-	516
+die			ART	--		-	507
+Kammerspiele		NE	--		HD	507
+und			KON	--		-	508
+das			PDS	--		HD	509
+ist			VAFIN	--		HD	510
+mir			PPER	--		HD	511
+auch			ADV	--		HD	512
+sehr			ADV	--		HD	513
+wichtig			ADJD	--		HD	519
+.			$.	--		--	0
+#500			DM	--		--	0
+#501			DM	--		--	0
+#502			ADVX	--		HD	520
+#503			NX	--		HD	514
+#504			VXFIN	--		HD	515
+#505			NX	--		ON	521
+#506			ADVX	--		MOD	521
+#507			NX	--		HD	516
+#508			KOORD	--		-	524
+#509			NX	--		ON	517
+#510			VXFIN	--		HD	518
+#511			NX	--		OD	522
+#512			ADVX	--		MOD	522
+#513			ADVX	--		-	519
+#514			PX	--		-	520
+#515			LK	--		-	525
+#516			PX	--		V-MOD	521
+#517			VF	--		-	524
+#518			LK	--		-	524
+#519			ADJX	--		PRED	522
+#520			ADVX	--		V-MOD	523
+#521			MF	--		-	525
+#522			MF	--		-	524
+#523			VF	--		-	525
+#524			SIMPX	--		--	0
+#525			SIMPX	--		--	0
+#EOS 198
+#BOS 199 4 951735804 1 %% <g296acn1_039_AJF_380000>
+gut			ITJ	--		-	500
+.			$.	--		--	0
+#500			DM	--		--	0
+#EOS 199
+#BOS 200 4 951735919 1 %% <g296acn2_040_AJG_380000>
+dann			ADV	--		HD	500
+machen			VVFIN	--		HD	501
+wir			PPER	--		HD	502
+das			PDS	--		HD	503
+so			ADV	--		HD	504
+,			$,	--		--	0
+dann			ADV	--		HD	505
+werde			VAFIN	--		HD	506
+ich			PPER	--		HD	507
+die			PDS	--		HD	508
+gleich			ADV	--		HD	509
+buchen			VVINF	--		HD	510
+,			$,	--		--	0
+die			ART	--		-	511
+Flüge			NN	--		HD	511
+.			$.	--		--	0
+#500			ADVX	--		MOD	512
+#501			VXFIN	--		HD	513
+#502			NX	--		ON	514
+#503			NX	--		OA	514
+#504			ADVX	--		V-MOD	514
+#505			ADVX	--		MOD	515
+#506			VXFIN	--		HD	516
+#507			NX	--		ON	517
+#508			NX	--		OA	517
+#509			ADVX	--		MOD	517
+#510			VXINF	--		OV	518
+#511			NX	--		OA-MOD	519
+#512			VF	--		-	520
+#513			LK	--		-	520
+#514			MF	--		-	520
+#515			VF	--		-	521
+#516			LK	--		-	521
+#517			MF	--		-	521
+#518			VC	--		-	521
+#519			NF	--		-	521
+#520			SIMPX	--		--	0
+#521			SIMPX	--		--	0
+#EOS 200
+%% 2745 sentences (29563 tokens, 36810 phrases)

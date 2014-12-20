@@ -1,0 +1,59 @@
+//      File: VerbPositions.tig
+//    Author: Esther Koenig, George Smith
+//   Purpose: Basic topological structure: verb positions
+//   Created: Thu Sep  6 13:38:54 2001 (esther)
+//  Modified: Wed Nov  6 17:05:47 2002 (esther)
+
+///////////////////////////////////////////////////
+// Primitive notion of verb first sentence
+// 
+// Literally, nothing comes before the finite verb.
+
+verbFirst(#s) <-
+   #s:[cat = "S"] &  
+   #v:[pos = finite] &
+   #s >@l #v ;
+
+///////////////////////////////////////////////////
+// Primitive notion of verb last sentence
+// 
+// Literally, nothing comes after the finite verb.
+
+verbLast(#s) <-
+   #s:[cat = "S"] &  
+   #v:[pos = finite] &
+   #s >@r #v ;
+
+///////////////////////////////////////////////////
+// Primitive notion of verb second sentence
+// 
+// Literally, something comes before and after the finite verb.
+
+verbSecond(#s,#v) <-
+   #s:[cat = "S"] &  
+   #v:[pos = finite ] &
+   #s > #v &
+   #s !>@l #v &
+   #s !>@r #v ;
+
+
+///////////////////////////////////////////////////
+// Verb second, accusative object in Vorfeld
+verbSecondVorfeldAcc(#s) <-
+   verbSecond(#s,#v) &
+   #s >OA #oa &
+   #oa .* #v ;
+
+///////////////////////////////////////////////////
+// Verb second, dative in Vorfeld
+verbSecondVorfeldDative(#s) <-
+   verbSecond(#s,#v) &
+   #s >DA #da &
+   #da .* #v ;
+
+///////////////////////////////////////////////////
+// Verb second, subject not in Vorfeld
+verbSecondVorfeldNonSubj(#s) <-
+   verbSecond(#s,#v) &
+   #s >SB #sb &
+   #v .* #sb;

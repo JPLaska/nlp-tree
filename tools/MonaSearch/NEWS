@@ -1,0 +1,19 @@
+Release 0.1
+	It works.
+
+Release 0.2
+	Major UI improvements, still experimental.
+		- Ask for save if formulas changed.
+
+Release 0.3
+	Now available for Windows and Mac!
+	UI is usable now:
+		- Save button in result view
+		- no more Result button
+		- remembers location, size, directories and treebanks
+		- sort out key bindings
+		- welcome splash screen asking for configuration directory
+
+	Subrelease 0.3.1
+		- small but important bug fix allowing two-place conjunction etc.
+		

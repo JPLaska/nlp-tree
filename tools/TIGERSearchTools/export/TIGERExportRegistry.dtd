@@ -1,0 +1,7 @@
+<!ELEMENT registry (stylesheet+)>
+<!ATTLIST registry  version  CDATA  #REQUIRED>
+
+<!ELEMENT stylesheet EMPTY>
+<!ATTLIST stylesheet id             ID  #REQUIRED>
+<!ATTLIST stylesheet name           CDATA  #REQUIRED>
+<!ATTLIST stylesheet sentence_xslt  CDATA  #REQUIRED>

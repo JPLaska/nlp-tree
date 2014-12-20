@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<typedeclaration base="pos" version="1.0">
+
+  <!-- base type: pos -->
+  <type name="pos">
+     <subtype nameref="openclass" />
+     <subtype nameref="closedclass" />
+     <subtype nameref="punctuation" />
+     <subtype nameref="misc" />
+  </type>
+
+  <!-- open word classes-->
+  <type name="openclass">
+     <subtype nameref="noun" />
+     <subtype nameref="verb" />
+     <subtype nameref="adjective" />
+     <!-- adverb -->
+     <constant value="ADV" comment="schon, bald, doch" />
+  </type>
+
+  <!-- closed word classes-->
+  <type name="closedclass">
+     <!-- definite or indefinite article -->
+     <constant value="ART" comment="der, die, das, ein, eine" />
+     <subtype nameref="proform" />
+     <!-- cardinal number -->
+     <constant value="CARD" comment="zwei [Männer], [im Jahre] 1994" />
+     <subtype nameref="conjunction" />
+     <subtype nameref="adposition" />
+     <!-- interjection -->
+     <constant value="ITJ" comment="mhm, ach, tja" />
+     <subtype nameref="particle" />
+  </type>
+
+  <!-- noun -->
+  <type name="noun">
+     <!-- common noun -->
+     <constant value="NN" comment="Tisch, Herr, [das] Reisen" />
+     <!-- proper noun -->
+     <constant value="NE" comment="Hans, Hamburg, HSV" />
+  </type>
+
+  <!-- verb -->
+  <type name="verb">
+     <subtype nameref="finite" />
+     <subtype nameref="nonfinite" />
+  </type>
+
+  <!-- finite verbform -->
+  <type name="finite">
+     <!-- finite full verb -->
+     <constant value="VVFIN" comment="du] gehst, [wir] kommen [an]" />
+     <!-- finite auxiliary verb -->
+     <constant value="VAFIN" comment="[du] bist, [wir] werden" />
+     <!-- finite modal verb --> 
+     <constant value="VMFIN" comment="dürfen" />
+  </type>
+
+  <!-- non-finite verbform -->
+  <type name="nonfinite">
+     <subtype nameref="infinitive" />
+     <subtype nameref="participle" />
+     <subtype nameref="imperative" />
+     <!-- infinitive with zu, full verb -->
+     <constant value="VVIZU" comment="anzukommen, loszulassen" />
+  </type>
+
+  <!-- infinitive verbform -->
+  <type name="infinitive">
+     <!-- inifinitive, full verb -->
+     <constant value="VVINF" comment="gehen, ankommen" />
+     <!-- infinitive, auxiliary verb -->
+     <constant value="VAINF" comment="werden, sein" />
+     <!-- infinitive, modal verb -->
+     <constant value="VMINF" comment="wollen" />
+  </type>
+
+  <!-- past participle -->
+  <type name="participle">
+     <!-- past participle, full verb -->
+     <constant value="VVPP" comment="gegangen, angekommen" />
+     <!-- past participle, auxiliary verb -->
+     <constant value="VAPP" comment="gewesen" />
+     <!-- past participle, modal verb -->
+     <constant value="VMPP" comment="gekonnt, [er hat gehen] können" />
+  </type>
+
+  <!-- past participle -->
+  <type name="participle">
+     <!-- past participle, full verb -->
+     <constant value="VVPP" comment="gegangen, angekommen" />
+     <!-- past participle, auxiliary verb -->
+     <constant value="VAPP" comment="gewesen" />
+     <!-- past participle, modal verb -->
+     <constant value="VMPP" comment="gekonnt, [er hat gehen] können" />
+  </type>
+
+  <!-- imperative -->
+  <type name="imperative">
+     <!-- imperative, full verb -->
+     <constant value="VVIMP" comment="komm [!]" />
+     <!-- imperative, auxiliary verb -->
+     <constant value="VAIMP" comment="sei [ruhig !]" />
+  </type>
+
+  <!-- adjective -->
+  <type name="adjective">
+     <!-- attributive adjective -->
+     <constant value="ADJA" comment="[das] große [Haus]" />
+     <!-- adverbal or predicative adjective -->
+     <constant value="ADJD" comment="[er fährt] schnell, [er ist] schnell" />
+  </type>
+
+  <!-- proform -->
+  <type name="proform">
+  <subtype nameref="prodemon" />
+  <subtype nameref="proindef" />
+  <!-- irreflexive personal pronoun -->
+  <constant value="PPER" comment="ich, er, ihm, mich, dir" />
+  <subtype nameref="propos" />
+  <subtype nameref="prorel" />
+  <!-- reflexive pronoun -->
+  <constant value="PRF" comment="sich, einander, dich, mir" />
+  <subtype nameref="prointer" />
+  <!-- pronominal adverb, bug, should be "PAV" -->
+  <constant value="PROAV" comment="dafür, dabei, deswegen, trotzdem" />
+  </type>
+
+  <!-- demonstrative pronoun -->
+  <type name="prodemon">
+     <!-- substitutive demonstrative pronoun -->
+     <constant value="PDS" comment="dieser, jener" />
+     <!-- attributive demonstrative pronoun -->
+     <constant value="PDAT" comment="jener [Mensch]" />
+  </type>
+
+  <!-- indefinite pronoun -->
+  <type name="proindef">
+     <!-- substitutive indefinite pronoun -->
+     <constant value="PIS" comment="keiner, viele, man, niemand" />
+     <!-- attributive indefinite pronoun -->
+     <constant value="PIAT" comment="kein [Mensch], irgendein [Glas]" />
+  </type>
+
+  <!-- posessive pronoun -->
+  <type name="propos">
+     <!-- substitutive possesive pronoun -->
+     <constant value="PPOSS" comment="meins, deiner" /> 
+     <!-- attributive possessive pronoun -->
+     <constant value="PPOSAT" comment="mein [Buch], deine [Mutter]" />
+  </type>
+
+  <!-- relative pronoun -->
+  <type name="prorel">
+     <!-- substitutive relative pronoun -->
+     <constant value="PRELS" comment="[der Hund,] der" />
+     <!-- attributive relative pronoun -->
+     <constant value="PRELAT" comment="[der Mann ,] dessen [Hund]" />
+  </type>
+
+  <!-- interrogative pronoun -->
+  <type name="prointer">
+     <!-- substitutive interrogative pronoun -->
+     <constant value="PWS" comment="wer, was" />
+     <!-- attributive interrogative pronoun -->
+     <constant value="PWAT" comment="welche [Farbe], wessen [Hut]" />
+     <!-- interrogative adverb or adverbial relative pronoun -->
+     <constant value="PWAV" comment="warum, wo, wann, worüber, wobei" />
+  </type>
+
+  <!-- conjunction -->
+  <type name="conjunction">
+  <subtype nameref="conjsub" />
+  <!-- coordinating conjunction -->
+  <constant value="KON" comment="und, oder, aber" />
+  <!-- comparative conjunction -->
+  <constant value="KOKOM" comment="als, wie" />
+  </type>
+
+  <!-- subordinating conjunction -->
+  <type name="conjsub">
+     <!-- subordinating conjunction with zu-infinitive -->
+     <constant value="KOUI" comment="um [zu leben], anstatt [zu fragen]" />
+     <!-- subordinating conjunction with sentence -->
+     <constant value="KOUS" comment="weil, daß, damit, wenn, ob" />
+  </type>
+
+  <!-- adposition -->
+  <type name="adposition">
+     <!-- preposition -->
+     <constant value="APPR" comment="in [der Stadt], ohne [mich], von [jetzt an]" />
+     <!-- preposition + article -->
+     <constant value="APPRART" comment="im [Haus], zur [Sache]" />
+     <!-- postposition -->
+     <constant value="APPO" comment="[ihm] zufolge, [der Sache] wegen" />
+     <!-- circumposition, right part -->
+     <constant value="APZR" comment="[von jetzt] an" />
+  </type>
+
+  <!-- particle -->
+  <type name="particle">
+     <!-- "zu" before infinitive -->
+     <constant value="PTKZU" comment="zu [gehen]" />
+     <!-- negating particle -->
+     <constant value="PTKNEG" comment="nicht" />
+     <!-- separated verb particle -->
+     <constant value="PTKVZ" comment="er kommt] an, [er fährt] rad" />
+     <!-- answer particle -->
+     <constant value="PTKANT" comment="ja, nein, danke, bitte" />
+     <!-- particle with adjektive or adverb -->
+     <constant value="PTKA" comment="am [schönsten], zu [schnell]" />
+  </type>
+
+  <type name="punctuation">
+     <!-- comma -->
+     <constant value="$," comment="," />
+     <!-- final punctuation -->
+     <constant value="$." comment=". ? ! ; :" />
+     <!-- other punctuation marks -->
+     <constant value="$(" comment="- [,]()" />
+  </type>
+
+  <type name="misc">
+     <!-- foreign material -->
+     <constant value="FM" comment="[Er hat das mit ``] A big fish ['' übersetzt]" />
+     <!-- nonword, with special characters -->
+     <constant value="XY" comment="3:7, H2O, D2XW3" />
+     <!-- truncated element -->
+     <constant value="TRUNC" comment="An- [und Abreise]" />
+     <!-- untagged -->
+     <constant value="--" />
+     <!-- tagging of the token unknown -->
+     <constant value="UNKNOWN" />
+  </type>
+
+</typedeclaration>

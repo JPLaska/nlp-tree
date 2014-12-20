@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE tigersearch SYSTEM "tigersearch.dtd">
+
+
+<!-- These are the default settings of the textual
+     query input mode of the TIGERSearch tool.
+
+     Please do NOT MODIFY this file! -->
+
+
+<tigersearch version="1.0">
+
+
+  <!-- Default configuration -->
+  <config level="default">
+
+    <!-- Font declaration for query input -->
+    <font att="queryFont">
+      <option name="DialogInput" style="plain" size="20"/>
+      <option name="Arial Unicode MS" style="plain" size="20"/>
+      <option name="Bitstream Cyberbit" style="plain" size="20"/>
+    </font>
+
+    <!-- Relative font size for query input font (-5/+5) -->
+    <span att="queryFontRelativeSize" units="0"/>    
+
+    <!-- Automatically pop up feature value window -->
+    <bool att="featurePopUp" value="yes"/>
+
+    <!-- Automatically expand Unicode encodings -->
+    <bool att="autoExpandUnicode" value="no"/>
+
+  </config>
+
+
+  <!-- Override default parameters for Linux -->
+  <config level="os" name="linux">
+  </config>
+
+  <!-- Override default parameters for Solaris -->
+  <config level="os" name="sunos">
+  </config>
+
+  <!-- Override default parameters for Windows -->
+  <config level="os" name="windows">
+  </config>
+
+
+  <!-- Override default parameters for local installation 
+       (NOT user configuration!) -->
+  <config level="local">
+  </config>
+
+
+</tigersearch>

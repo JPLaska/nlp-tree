@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<corpus id="TEST" 
+        version="1.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../schema/TigerXML.xsd"
+>
+
+<body>
+
+<s id="s1">
+
+  <graph root="s1_110"> 
+    <terminals>
+      <t id="s1_1" word="Mögen" pos="VMFIN" morph="3.Pl.Pres.Konj" />
+      <t id="s1_2" word="Puristen" pos="NN" morph="Masc.Nom.Pl.*" />
+      <t id="s1_3" word="aller" pos="PIDAT" morph="*.Gen.Pl" />
+      <t id="s1_4" word="Musikbereiche" pos="NN" morph="Masc.Gen.Pl.*" />
+      <t id="s1_5" word="auch" pos="ADV" />
+      <t id="s1_6" word="die" pos="ART" morph="Def.Fem.Akk.Sg" />
+      <t id="s1_7" word="Nase" pos="NN" morph="Fem.Akk.Sg.*" />
+      <t id="s1_8" word="rümpfen" pos="VVINF" />
+      <t id="s1_9" word="," pos="$," />
+      <t id="s1_10" word="die" pos="ART" morph="Def.Fem.Nom.Sg" />
+      <t id="s1_11" word="Zukunft" pos="NN" morph="Fem.Nom.Sg.*" />
+      <t id="s1_12" word="der" pos="ART" morph="Def.Fem.Gen.Sg" />
+      <t id="s1_13" word="Musik" pos="NN" morph="Fem.Gen.Sg.*" />
+      <t id="s1_14" word="liegt" pos="VVFIN" morph="3.Sg.Pres.Ind" />
+      <t id="s1_15" word="für" pos="APPR" morph="Akk" />
+      <t id="s1_16" word="viele" pos="PIDAT" morph="*.Akk.Pl" />
+      <t id="s1_17" word="junge" pos="ADJA" morph="Pos.*.Akk.Pl.St" />
+      <t id="s1_18" word="Komponisten" pos="NN" morph="Masc.Akk.Pl.*" />
+      <t id="s1_19" word="im" pos="APPRART" morph="Dat.Masc" />
+      <t id="s1_20" word="Crossover-Stil" pos="NN" morph="Masc.Dat.Sg.*" />
+      <t id="s1_21" word="." pos="$." />
+    </terminals>
+    <nonterminals>
+      <nt id="s1_100" cat="NP">
+        <edge label="NK" idref="s1_3" />
+        <edge label="NK" idref="s1_4" />
+      </nt>
+      <nt id="s1_101" cat="NP">
+        <edge label="NK" idref="s1_6" />
+        <edge label="NK" idref="s1_7" />
+      </nt>
+      <nt id="s1_102" cat="NP">
+        <edge label="NK" idref="s1_12" />
+        <edge label="NK" idref="s1_13" />
+      </nt>
+      <nt id="s1_103" cat="PP">
+        <edge label="AC" idref="s1_15" />
+        <edge label="NK" idref="s1_16" />
+        <edge label="NK" idref="s1_17" />
+        <edge label="NK" idref="s1_18" />
+      </nt>
+      <nt id="s1_104" cat="PP">
+        <edge label="AC" idref="s1_19" />
+        <edge label="NK" idref="s1_20" />
+      </nt>
+      <nt id="s1_105" cat="NP">
+        <edge label="NK" idref="s1_2" />
+        <edge label="GR" idref="s1_100" />
+      </nt>
+      <nt id="s1_106" cat="VP">
+        <edge label="OA" idref="s1_101" />
+        <edge label="HD" idref="s1_8" />
+      </nt>
+      <nt id="s1_107" cat="NP">
+        <edge label="NK" idref="s1_10" />
+        <edge label="NK" idref="s1_11" />
+        <edge label="GR" idref="s1_102" />
+      </nt>
+      <nt id="s1_108" cat="S">
+        <edge label="HD" idref="s1_1" />
+        <edge label="SB" idref="s1_105" />
+        <edge label="MO" idref="s1_5" />
+        <edge label="OC" idref="s1_106" />
+      </nt>
+      <nt id="s1_109" cat="S">
+        <edge label="MO" idref="s1_108" />
+        <edge label="SB" idref="s1_107" />
+        <edge label="HD" idref="s1_14" />
+        <edge label="MO" idref="s1_103" />
+        <edge label="MO" idref="s1_104" />
+      </nt>
+      <nt id="s1_110" cat="vROOT">
+        <edge idref="s1_109" />
+        <edge idref="s1_9" />
+        <edge idref="s1_21" />
+      </nt>
+    </nonterminals>
+  </graph>
+  <matches>
+    <match subgraph="s1_103">
+      <variable name="#w" idref="s1_103" />
+    </match>
+    <match subgraph="s1_104">
+      <variable name="#w" idref="s1_104" />
+    </match>
+  </matches>
+</s>
+
+</body>
+
+</corpus>

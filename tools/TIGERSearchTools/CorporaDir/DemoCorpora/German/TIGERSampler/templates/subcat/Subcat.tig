@@ -1,0 +1,33 @@
+//      File: Subcat.tig
+//    Author: Esther Koenig, George Smith
+//   Purpose: prototypical verb frames
+//   Created: Thu Sep  6 13:38:54 2001 (esther)
+//  Modified: Wed Nov  6 17:04:34 2002 (esther)
+
+///////////////////////////////////////////////////
+// prototypical 3 place verbs (SB, OA, DA)
+
+threePlaceVerb(#s) <-
+    #s:[cat="S"] & 
+    #s >SB [] &
+    ( ditransitive(#s)
+    ) 
+    |
+    ( #s >OC #vp1:[cat="VP"] & 
+      ( ditransitive(#vp1)
+      ) 
+      |
+      ( #vp1 >OC #vp2:[cat="VP"] &
+        ( ditransitive(#vp2)
+        ) 
+        |
+        ( #vp1 >OC #vp3:[cat="VP"] & 
+          ditransitive(#vp3)
+        )
+      )
+    ) ;
+
+
+ditransitive(#x) <-
+   #x >OA [] & 
+   #x >DA [] ;

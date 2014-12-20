@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus version="1.1" id="YACSampler">
+  <!--This file is maintained by the TIGERRegistry tool. Please do NOT modify this file.-->
+  <!--Declaration of the corpus types-->
+  <types>
+    <feature name="word" />
+    <feature name="cat" />
+    <feature name="pos" type="yac_stts.xml" />
+    <feature name="h" />
+    <feature name="f" />
+    <feature name="lemma" />
+  </types>
+  <!--Declaration of the corpus templates-->
+  <templates basepath="" />
+  <!--Declaration of corpus bookmarks-->
+  <bookmarks path="" />
+</corpus>
+

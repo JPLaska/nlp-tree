@@ -1,0 +1,12 @@
+----------------------------------------------------------------
+2014-12-19 03:40:36.617 GMT:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.6.2.1 - (999685): instance a816c00e-014a-60a1-fc1f-000006a492b0 
+on database directory /afs/cs.wisc.edu/u/j/l/jlaska/fangorn/fangorn1.2/db  with class loader sun.misc.Launcher$AppClassLoader@30a4effe 
+Loaded from file:/afs/cs.wisc.edu/u/j/l/jlaska/fangorn/fangorn1.2/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_72-b14
+Database Class Loader started - derby.database.classpath=''
+
+2014-12-19 03:40:36.929 GMT:
+Shutting down instance a816c00e-014a-60a1-fc1f-000006a492b0 with class loader sun.misc.Launcher$AppClassLoader@30a4effe 
+----------------------------------------------------------------

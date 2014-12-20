@@ -1,0 +1,586 @@
+<HTML>
+<HEAD>
+  <TITLE>Corpus Negra II Corpus Sampler</TITLE>
+  <STYLE TYPE="text/css">
+    table, tr, td, p,
+    ul, li, b, center { font-family: dialog, arial, sans-serif;
+                        font-size: 12pt;
+                      }
+    h2 { font-family: dialog, arial, sans-serif;
+         font-size: 16pt;
+         color: red;
+       }
+    h3 { font-family: dialog, arial, sans-serif;
+         font-size: 14pt;
+         color: blue;
+       }
+    h4 { font-family: dialog, arial, sans-serif;
+         font-size: 12pt;
+         color: red;
+       }
+  </STYLE>
+</HEAD>
+
+<BODY BGCOLOR="white">
+
+<CENTER>
+<H2>Negra II Corpus Sampler</H2>
+(250 corpus graphs)
+</CENTER>
+<H3>1. General information</H3>
+<TABLE CELLPADDING="2" CELLSPACING="2">
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Name: </B></TD>
+    <TD VALIGN=TOP>Negra II Corpus Sampler</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>ID: </B></TD>
+    <TD VALIGN=TOP>NEGRASampler</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Format: </B></TD>
+    <TD VALIGN=TOP>NeGra format, version 3</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Author: </B></TD>
+    <TD VALIGN=TOP>Negra Project, CoLi, University of Saarbruecken</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Date: </B></TD>
+    <TD VALIGN=TOP>2001</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Description: </B></TD>
+    <TD VALIGN=TOP>A sampler of 250 sentences from the Negra II Corpus.
+With kind permission of the Negra Project.
+</TD>
+  </TR>
+</TABLE>
+<H3>2. Corpus details</H3>
+<TABLE CELLPADDING=5 CELLSPACING="2">
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Features (T):</B></TD>
+    <TD VALIGN=TOP>word, pos, morph</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Features (NT):</B></TD>
+    <TD VALIGN=TOP>cat</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Labelled edges:</B></TD>
+    <TD VALIGN=TOP>yes</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Crossing edges:</B></TD>
+    <TD VALIGN=TOP>yes</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Secondary edges:</B></TD>
+    <TD VALIGN=TOP>yes</TD>
+  </TR>
+</TABLE>
+<H3>3. Statistical information</H3>
+<TABLE CELLPADDING="5" CELLSPACING="2">
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Number of corpus graphs:</B></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP>250</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Number of tokens:</B></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP>5013</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Average number of tokens:</B></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP>20.1</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Number of inner nodes:</B></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP>2256</TD>
+  </TR>
+  <TR bgcolor="white">
+    <TD VALIGN=TOP><B>Number of edges:</B></TD>
+    <TD ALIGN=RIGHT VALIGN=TOP>7021</TD>
+  </TR>
+</TABLE>
+<H3>4. Feature documentation</H3>
+<A NAME="pos">
+<H4>Feature values: pos</H4>
+<UL>
+  <LI>$( (Sonstige Satzzeichen; satzintern)
+  <LI>$, (Komma)
+  <LI>$. (Satzbeendende Interpunktion)
+  <LI>-- (<Nicht zugeordnet>)
+  <LI>ADJA (Attributives Adjektiv)
+  <LI>ADJD (Adverbiales oder prädikatives Adjektiv)
+  <LI>ADV (Adverb)
+  <LI>APPO (Postposition)
+  <LI>APPR (Präposition; Zirkumposition links)
+  <LI>APPRART (Präposition mit Artikel)
+  <LI>APZR (Zirkumposition rechts)
+  <LI>ART (Bestimmter oder unbestimmter Artikel)
+  <LI>CARD (Kardinalzahl)
+  <LI>FM (Fremdsprachliches Material)
+  <LI>ITJ (Interjektion)
+  <LI>KOKOM (Vergleichspartikel, ohne Satz)
+  <LI>KON (Nebenordnende Konjunktion)
+  <LI>KOUI (Unterordnende Konjunktion mit zu und Infinitiv)
+  <LI>KOUS (Unterordnende Konjunktion mit Satz)
+  <LI>NE (Eigennamen)
+  <LI>NN (Normales Nomen)
+  <LI>NNE (Verbindung aus Eigennamen und normalen Nomen)
+  <LI>PDAT (Attribuierendes Demonstrativpronomen)
+  <LI>PDS (Substituierendes Demonstrativpronomen)
+  <LI>PIAT (Attribuierendes Indefinitpronomen)
+  <LI>PIDAT (Attribuierendes Indefinitpronomen mit Determiner)
+  <LI>PIS (Substituierendes Indefinitpronomen)
+  <LI>PPER (Irreflexives Personalpronomen)
+  <LI>PPOSAT (Attribuierendes Possessivpronomen)
+  <LI>PPOSS (Substituierendes Possessivpronomen)
+  <LI>PRELAT (Attribuierendes Relativpronomen)
+  <LI>PRELS (Substituierendes Relativpronomen)
+  <LI>PRF (Reflexives Personalpronomen)
+  <LI>PROAV (Pronominaladverb)
+  <LI>PTKA (Partikel bei Adjektiv oder Adverb)
+  <LI>PTKANT (Antwortpartikel)
+  <LI>PTKNEG (Negationspartikel)
+  <LI>PTKVZ (Abgetrennter Verbzusatz)
+  <LI>PTKZU (zu vor Infinitiv)
+  <LI>PWAT (Attribuierendes Interrogativpronomen)
+  <LI>PWAV (Adverbiales Interrogativ- oder Relativpronomen)
+  <LI>PWS (Substituierendes Interrogativpronomen)
+  <LI>TRUNC (Kompositions-Erstglied)
+  <LI>UNKNOWN (Unbekanntes Tag aus Einlesen aus Korpusdatei)
+  <LI>VAFIN (Finites Verb, aux)
+  <LI>VAIMP (Imperativ, aux)
+  <LI>VAINF (Infinitiv, aux)
+  <LI>VAPP (Partizip Perfekt, aux)
+  <LI>VMFIN (Finites Verb, modal)
+  <LI>VMINF (Infinitiv, modal)
+  <LI>VMPP (Partizip Perfekt, modal)
+  <LI>VVFIN (Finites Verb, voll)
+  <LI>VVIMP (Imperativ, voll)
+  <LI>VVINF (Infinitiv, voll)
+  <LI>VVIZU (Infinitiv mit zu, voll)
+  <LI>VVPP (Partizip Perfekt, voll)
+  <LI>XY (Nichtwort, Sonderzeichen)
+</UL><A NAME="morph">
+<H4>Feature values: morph</H4>
+<UL>
+  <LI>*
+  <LI>*.*.*
+  <LI>*.*.*.*.*
+  <LI>*.*.Akk.Pl.St
+  <LI>*.*.Akk.Pl.Sw
+  <LI>*.*.Dat.Pl.St
+  <LI>*.*.Dat.Pl.Sw
+  <LI>*.*.Gen.Pl.St
+  <LI>*.*.Gen.Pl.Sw
+  <LI>*.*.Nom.Pl.St
+  <LI>*.*.Nom.Pl.Sw
+  <LI>*.Akk.Pl
+  <LI>*.Akk.Pl.*
+  <LI>*.Akk.Pl.St
+  <LI>*.Akk.Pl.Sw
+  <LI>*.Akk.Sg
+  <LI>*.Akk.Sg.St
+  <LI>*.Dat.Pl
+  <LI>*.Dat.Pl.*
+  <LI>*.Dat.Pl.St
+  <LI>*.Dat.Pl.Sw
+  <LI>*.Dat.Sg
+  <LI>*.Fem.Akk.Sg.Mix
+  <LI>*.Fem.Akk.Sg.St
+  <LI>*.Fem.Akk.Sg.Sw
+  <LI>*.Fem.Dat.Sg.Mix
+  <LI>*.Fem.Dat.Sg.St
+  <LI>*.Fem.Dat.Sg.Sw
+  <LI>*.Fem.Gen.Sg.Sw
+  <LI>*.Fem.Nom.Sg.St
+  <LI>*.Fem.Nom.Sg.Sw
+  <LI>*.Gen.Pl
+  <LI>*.Gen.Pl.*
+  <LI>*.Gen.Pl.St
+  <LI>*.Gen.Pl.Sw
+  <LI>*.Gen.Sg
+  <LI>*.Masc.Akk.Sg.Mix
+  <LI>*.Masc.Akk.Sg.Sw
+  <LI>*.Masc.Dat.Sg.Mix
+  <LI>*.Masc.Dat.Sg.Sw
+  <LI>*.Masc.Gen.Sg.Mix
+  <LI>*.Masc.Gen.Sg.Sw
+  <LI>*.Masc.Nom.Sg.Mix
+  <LI>*.Masc.Nom.Sg.St
+  <LI>*.Masc.Nom.Sg.Sw
+  <LI>*.Neut.Akk.Sg.Sw
+  <LI>*.Neut.Dat.Sg.Mix
+  <LI>*.Neut.Dat.Sg.Sw
+  <LI>*.Neut.Gen.Sg.Sw
+  <LI>*.Neut.Nom.Sg.Mix
+  <LI>*.Neut.Nom.Sg.St
+  <LI>*.Neut.Nom.Sg.Sw
+  <LI>*.Nom.Pl
+  <LI>*.Nom.Pl.*
+  <LI>*.Nom.Pl.Mix
+  <LI>*.Nom.Pl.St
+  <LI>*.Nom.Pl.Sw
+  <LI>*.Nom.Sg
+  <LI>-- (not bound)
+  <LI>1.Akk.Pl
+  <LI>1.Akk.Sg
+  <LI>1.Dat.Pl
+  <LI>1.Dat.Sg
+  <LI>1.Pl.*.Akk
+  <LI>1.Pl.*.Dat
+  <LI>1.Pl.*.Nom
+  <LI>1.Pl.Past.Ind
+  <LI>1.Pl.Past.Konj
+  <LI>1.Pl.Pres.Ind
+  <LI>1.Sg.*.Akk
+  <LI>1.Sg.*.Dat
+  <LI>1.Sg.*.Nom
+  <LI>1.Sg.Past.Ind
+  <LI>1.Sg.Past.Konj
+  <LI>1.Sg.Pres.Ind
+  <LI>1.Sg.Pres.Konj
+  <LI>2.Akk.Sg
+  <LI>2.Dat.Sg
+  <LI>2.Pl.*.Nom
+  <LI>2.Pl.Pres.Ind
+  <LI>2.Sg.*.Akk
+  <LI>2.Sg.*.Dat
+  <LI>2.Sg.*.Nom
+  <LI>2.Sg.Past.Ind
+  <LI>2.Sg.Pres.Ind
+  <LI>2.Sg.Pres.Konj
+  <LI>3.Akk.Pl
+  <LI>3.Akk.Sg
+  <LI>3.Dat.Pl
+  <LI>3.Dat.Sg
+  <LI>3.Pl.*.Akk
+  <LI>3.Pl.*.Dat
+  <LI>3.Pl.*.Nom
+  <LI>3.Pl.Past.Ind
+  <LI>3.Pl.Past.Konj
+  <LI>3.Pl.Pres.Ind
+  <LI>3.Pl.Pres.Konj
+  <LI>3.Sg.Fem.Akk
+  <LI>3.Sg.Fem.Dat
+  <LI>3.Sg.Fem.Nom
+  <LI>3.Sg.Masc.Akk
+  <LI>3.Sg.Masc.Dat
+  <LI>3.Sg.Masc.Nom
+  <LI>3.Sg.Neut.Akk
+  <LI>3.Sg.Neut.Nom
+  <LI>3.Sg.Past.Ind
+  <LI>3.Sg.Past.Konj
+  <LI>3.Sg.Pres.Ind
+  <LI>3.Sg.Pres.Konj
+  <LI>Akk
+  <LI>Akk.Neut
+  <LI>Comp
+  <LI>Comp.*.Akk.Pl.Mix
+  <LI>Comp.*.Akk.Pl.St
+  <LI>Comp.*.Dat.Pl.St
+  <LI>Comp.*.Dat.Pl.Sw
+  <LI>Comp.*.Gen.Pl.St
+  <LI>Comp.*.Nom.Pl.St
+  <LI>Comp.*.Nom.Pl.Sw
+  <LI>Comp.Fem.Akk.Sg.Mix
+  <LI>Comp.Fem.Akk.Sg.St
+  <LI>Comp.Fem.Akk.Sg.Sw
+  <LI>Comp.Fem.Dat.Sg.Mix
+  <LI>Comp.Fem.Dat.Sg.St
+  <LI>Comp.Fem.Dat.Sg.Sw
+  <LI>Comp.Fem.Gen.Sg.Mix
+  <LI>Comp.Fem.Gen.Sg.Sw
+  <LI>Comp.Fem.Nom.Sg.Mix
+  <LI>Comp.Fem.Nom.Sg.Sw
+  <LI>Comp.Masc.Akk.Sg.Mix
+  <LI>Comp.Masc.Akk.Sg.St
+  <LI>Comp.Masc.Akk.Sg.Sw
+  <LI>Comp.Masc.Dat.Sg.Mix
+  <LI>Comp.Masc.Dat.Sg.St
+  <LI>Comp.Masc.Dat.Sg.Sw
+  <LI>Comp.Masc.Nom.Sg.Mix
+  <LI>Comp.Masc.Nom.Sg.St
+  <LI>Comp.Masc.Nom.Sg.Sw
+  <LI>Comp.Neut.Akk.Sg.Mix
+  <LI>Comp.Neut.Akk.Sg.St
+  <LI>Comp.Neut.Akk.Sg.Sw
+  <LI>Comp.Neut.Dat.Sg.Mix
+  <LI>Comp.Neut.Dat.Sg.St
+  <LI>Comp.Neut.Nom.Sg.Mix
+  <LI>Comp.Neut.Nom.Sg.Sw
+  <LI>Dat
+  <LI>Dat-Akk (Dativ order Akkusativ)
+  <LI>Dat.Fem
+  <LI>Dat.Masc
+  <LI>Dat.Neut
+  <LI>Def.*.Akk.Pl
+  <LI>Def.*.Dat.Pl
+  <LI>Def.*.Gen.Pl
+  <LI>Def.*.Nom.Pl
+  <LI>Def.Fem.Akk.Sg
+  <LI>Def.Fem.Dat.Sg
+  <LI>Def.Fem.Gen.Sg
+  <LI>Def.Fem.Nom.Sg
+  <LI>Def.Masc.Akk.Sg
+  <LI>Def.Masc.Dat.Sg
+  <LI>Def.Masc.Gen.Sg
+  <LI>Def.Masc.Nom.Sg
+  <LI>Def.Neut.Akk.Sg
+  <LI>Def.Neut.Dat.Sg
+  <LI>Def.Neut.Gen.Sg
+  <LI>Def.Neut.Nom.Sg
+  <LI>Fem.Akk.Pl.*
+  <LI>Fem.Akk.Sg
+  <LI>Fem.Akk.Sg.*
+  <LI>Fem.Akk.Sg.St
+  <LI>Fem.Dat.Pl
+  <LI>Fem.Dat.Pl.*
+  <LI>Fem.Dat.Sg
+  <LI>Fem.Dat.Sg.*
+  <LI>Fem.Dat.Sg.Mix
+  <LI>Fem.Dat.Sg.Sw
+  <LI>Fem.Gen.Pl.*
+  <LI>Fem.Gen.Sg
+  <LI>Fem.Gen.Sg.*
+  <LI>Fem.Gen.Sg.Mix
+  <LI>Fem.Nom.Pl.*
+  <LI>Fem.Nom.Sg
+  <LI>Fem.Nom.Sg.*
+  <LI>Fem.Nom.Sg.St
+  <LI>Fem.Nom.Sg.Sw
+  <LI>Gen
+  <LI>Gen-Dat (Dativ oder Genitiv)
+  <LI>Indef.Fem.Akk.Sg
+  <LI>Indef.Fem.Dat.Sg
+  <LI>Indef.Fem.Gen.Sg
+  <LI>Indef.Fem.Nom.Sg
+  <LI>Indef.Masc.Akk.Sg
+  <LI>Indef.Masc.Dat.Sg
+  <LI>Indef.Masc.Gen.Sg
+  <LI>Indef.Masc.Nom.Sg
+  <LI>Indef.Neut.Akk.Sg
+  <LI>Indef.Neut.Dat.Sg
+  <LI>Indef.Neut.Gen.Sg
+  <LI>Indef.Neut.Nom.Sg
+  <LI>Masc.Akk.Pl
+  <LI>Masc.Akk.Pl.*
+  <LI>Masc.Akk.Pl.St
+  <LI>Masc.Akk.Sg
+  <LI>Masc.Akk.Sg.*
+  <LI>Masc.Akk.Sg.Mix
+  <LI>Masc.Akk.Sg.Sw
+  <LI>Masc.Dat.Pl
+  <LI>Masc.Dat.Pl.*
+  <LI>Masc.Dat.Pl.St
+  <LI>Masc.Dat.Sg
+  <LI>Masc.Dat.Sg.*
+  <LI>Masc.Dat.Sg.Sw
+  <LI>Masc.Gen.Pl
+  <LI>Masc.Gen.Pl.*
+  <LI>Masc.Gen.Sg
+  <LI>Masc.Gen.Sg.*
+  <LI>Masc.Gen.Sg.Mix
+  <LI>Masc.Gen.Sg.Sw
+  <LI>Masc.Nom.Pl.*
+  <LI>Masc.Nom.Sg
+  <LI>Masc.Nom.Sg.*
+  <LI>Masc.Nom.Sg.Mix
+  <LI>Masc.Nom.Sg.St
+  <LI>Masc.Nom.Sg.Sw
+  <LI>Neut.Akk.Pl.*
+  <LI>Neut.Akk.Sg
+  <LI>Neut.Akk.Sg.*
+  <LI>Neut.Akk.Sg.St
+  <LI>Neut.Akk.Sg.Sw
+  <LI>Neut.Dat.Pl.*
+  <LI>Neut.Dat.Sg
+  <LI>Neut.Dat.Sg.*
+  <LI>Neut.Dat.Sg.St
+  <LI>Neut.Dat.Sg.Sw
+  <LI>Neut.Gen.Pl.*
+  <LI>Neut.Gen.Sg
+  <LI>Neut.Gen.Sg.*
+  <LI>Neut.Gen.Sg.Mix
+  <LI>Neut.Gen.Sg.Sw
+  <LI>Neut.Nom.Pl.*
+  <LI>Neut.Nom.Sg
+  <LI>Neut.Nom.Sg.*
+  <LI>Neut.Nom.Sg.St
+  <LI>Neut.Nom.Sg.Sw
+  <LI>Nom (Nominativ)
+  <LI>Nom-Akk (Akkusativ oder Nominativ)
+  <LI>Nom-Dat-Akk (Dativ oder Akkusativ oder Nominativ)
+  <LI>Pl
+  <LI>Pos
+  <LI>Pos.*.*.*.*
+  <LI>Pos.*.Akk.Pl.Mix
+  <LI>Pos.*.Akk.Pl.St
+  <LI>Pos.*.Akk.Pl.Sw
+  <LI>Pos.*.Dat.Pl.Mix
+  <LI>Pos.*.Dat.Pl.St
+  <LI>Pos.*.Dat.Pl.Sw
+  <LI>Pos.*.Gen.Pl.Mix
+  <LI>Pos.*.Gen.Pl.St
+  <LI>Pos.*.Gen.Pl.Sw
+  <LI>Pos.*.Nom.Pl.Mix
+  <LI>Pos.*.Nom.Pl.St
+  <LI>Pos.*.Nom.Pl.Sw
+  <LI>Pos.Fem.Akk.Sg.Mix
+  <LI>Pos.Fem.Akk.Sg.St
+  <LI>Pos.Fem.Akk.Sg.Sw
+  <LI>Pos.Fem.Dat.Sg.Mix
+  <LI>Pos.Fem.Dat.Sg.St
+  <LI>Pos.Fem.Dat.Sg.Sw
+  <LI>Pos.Fem.Gen.Sg.Mix
+  <LI>Pos.Fem.Gen.Sg.St
+  <LI>Pos.Fem.Gen.Sg.Sw
+  <LI>Pos.Fem.Nom.Sg.Mix
+  <LI>Pos.Fem.Nom.Sg.St
+  <LI>Pos.Fem.Nom.Sg.Sw
+  <LI>Pos.Masc.Akk.Sg.Mix
+  <LI>Pos.Masc.Akk.Sg.St
+  <LI>Pos.Masc.Akk.Sg.Sw
+  <LI>Pos.Masc.Dat.Sg.Mix
+  <LI>Pos.Masc.Dat.Sg.St
+  <LI>Pos.Masc.Dat.Sg.Sw
+  <LI>Pos.Masc.Gen.Sg.Mix
+  <LI>Pos.Masc.Gen.Sg.St
+  <LI>Pos.Masc.Gen.Sg.Sw
+  <LI>Pos.Masc.Nom.Sg.Mix
+  <LI>Pos.Masc.Nom.Sg.St
+  <LI>Pos.Masc.Nom.Sg.Sw
+  <LI>Pos.Neut.Akk.Sg.Mix
+  <LI>Pos.Neut.Akk.Sg.St
+  <LI>Pos.Neut.Akk.Sg.Sw
+  <LI>Pos.Neut.Dat.Sg.Mix
+  <LI>Pos.Neut.Dat.Sg.St
+  <LI>Pos.Neut.Dat.Sg.Sw
+  <LI>Pos.Neut.Gen.Sg.Mix
+  <LI>Pos.Neut.Gen.Sg.St
+  <LI>Pos.Neut.Gen.Sg.Sw
+  <LI>Pos.Neut.Nom.Sg.Mix
+  <LI>Pos.Neut.Nom.Sg.St
+  <LI>Pos.Neut.Nom.Sg.Sw
+  <LI>Sg
+  <LI>Sup
+  <LI>Sup.*.Akk.Pl.St
+  <LI>Sup.*.Akk.Pl.Sw
+  <LI>Sup.*.Dat.Pl.St
+  <LI>Sup.*.Dat.Pl.Sw
+  <LI>Sup.*.Gen.Pl.Sw
+  <LI>Sup.*.Nom.Pl.Mix
+  <LI>Sup.*.Nom.Pl.Sw
+  <LI>Sup.Fem.Akk.Sg.St
+  <LI>Sup.Fem.Akk.Sg.Sw
+  <LI>Sup.Fem.Dat.Sg.Mix
+  <LI>Sup.Fem.Dat.Sg.St
+  <LI>Sup.Fem.Dat.Sg.Sw
+  <LI>Sup.Fem.Gen.Sg.St
+  <LI>Sup.Fem.Gen.Sg.Sw
+  <LI>Sup.Fem.Nom.Sg.Mix
+  <LI>Sup.Fem.Nom.Sg.St
+  <LI>Sup.Fem.Nom.Sg.Sw
+  <LI>Sup.Masc.Akk.Sg.St
+  <LI>Sup.Masc.Akk.Sg.Sw
+  <LI>Sup.Masc.Dat.Sg.Mix
+  <LI>Sup.Masc.Dat.Sg.Sw
+  <LI>Sup.Masc.Gen.Sg.Sw
+  <LI>Sup.Masc.Nom.Sg.Mix
+  <LI>Sup.Masc.Nom.Sg.St
+  <LI>Sup.Masc.Nom.Sg.Sw
+  <LI>Sup.Neut.Akk.Sg.Mix
+  <LI>Sup.Neut.Akk.Sg.Sw
+  <LI>Sup.Neut.Dat.Sg.Sw
+  <LI>Sup.Neut.Gen.Sg.St
+  <LI>Sup.Neut.Nom.Sg.St
+  <LI>Sup.Neut.Nom.Sg.Sw
+  <LI>UNKNOWN (unknown tag)
+</UL><A NAME="cat">
+<H4>Feature values: cat</H4>
+<UL>
+  <LI>-- (<not bound>)
+  <LI>AA (superlative phrase with "am")
+  <LI>AP (adjektive phrase)
+  <LI>AVP (adverbial phrase)
+  <LI>CAC (coordinated adposition)
+  <LI>CAP (coordinated adjektive phrase)
+  <LI>CAVP (coordinated adverbial phrase)
+  <LI>CCP (coordinated complementiser)
+  <LI>CH (chunk)
+  <LI>CNP (coordinated noun phrase)
+  <LI>CO (coordination)
+  <LI>CPP (coordinated adpositional phrase)
+  <LI>CS (coordinated sentence)
+  <LI>CVP (coordinated verb phrase (non-finite))
+  <LI>CVZ (coordinated zu-marked infinitive)
+  <LI>DL (discourse level constituent)
+  <LI>ISU (idiosyncratis unit)
+  <LI>MPN (multi-word proper noun)
+  <LI>MTA (multi-token adjective)
+  <LI>NM (multi-token number)
+  <LI>NP (noun phrase)
+  <LI>PP (adpositional phrase)
+  <LI>QL (quasi-languag)
+  <LI>S (sentence)
+  <LI>VP (verb phrase (non-finite))
+  <LI>VZ (zu-marked infinitive)
+  <LI>VROOT (unbound feature value of a virtual root)
+</UL><A NAME="edge">
+<H4>Edge labels</H4>
+<UL>
+  <LI>-- (--)
+  <LI>AC (adpositional case marker)
+  <LI>ADC (adjective component)
+  <LI>AMS (measure argument of adj)
+  <LI>APP (apposition)
+  <LI>AVC (adverbial phrase component)
+  <LI>CC (comparative complement)
+  <LI>CD (coordinating conjunction)
+  <LI>CJ (conjunct)
+  <LI>CM (comparative concjunction)
+  <LI>CP (complementizer)
+  <LI>DA (dative)
+  <LI>DH (discourse-level head)
+  <LI>DM (discourse marker)
+  <LI>GL (prenominal genitive)
+  <LI>GR (postnominal genitive)
+  <LI>HD (head)
+  <LI>JU (junctor)
+  <LI>MC (comitative)
+  <LI>MI (instrumental)
+  <LI>ML (locative)
+  <LI>MNR (postnominal modifier)
+  <LI>MO (modifier)
+  <LI>MR (rhetorical modifier)
+  <LI>MW (way (directional modifier))
+  <LI>NG (negation)
+  <LI>NK (noun kernel modifier)
+  <LI>NMC (numerical component)
+  <LI>OA (accusative object)
+  <LI>OA2 (second accusative object)
+  <LI>OC (clausal object)
+  <LI>OG (genitive object)
+  <LI>PD (predicate)
+  <LI>PG (pseudo-genitive)
+  <LI>PH (placeholder)
+  <LI>PM (morphological particle)
+  <LI>PNC (proper noun component)
+  <LI>RC (relative clause)
+  <LI>RE (repeated element)
+  <LI>RS (reported speech)
+  <LI>SB (subject)
+  <LI>SBP (passivised subject (PP))
+  <LI>SP (subject or predicate)
+  <LI>SVP (separable verb prefix)
+  <LI>UC ((idiosyncratic) unit component)
+  <LI>VO (vocative)
+</UL><A NAME="secedge">
+<H4>Secondary edge labels</H4>
+<UL>
+  <LI>-- (<not bound>)
+</UL></BODY>
+
+</HTML>

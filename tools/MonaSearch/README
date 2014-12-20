@@ -1,0 +1,33 @@
+----------------------------------------------------------------------
+						MonaSearch readme
+----------------------------------------------------------------------
+
+Thank you for downloading MonaSearch, querying tree banks with Mona.
+
+Invoke the jar file as follows:
+
+  java -Djava.library.path=←path-to-library→ -jar MonaSearch.jar
+
+On Linux, the library is called ‘libmona.so’, on Windows ‘mona.dll’ and on Mac
+‘libmona.jnilib’.
+Make sure the library and the java you are running are compiled for the same
+architecture (especially, a 32-bit Java will complain about a 64-bit library,
+and converse).
+
+The file test50.export contains a sample of 50 trees from the TüBa-D/Z corpus.
+Note that MonaSearch expects corpora to be in UTF-8 encoding.  Nothing will go
+wrong if they aren’t, but your words won’t look like you expect them, and it
+will be difficult looking for them.
+
+The file example-formulas.txt contains some sample formulas in the fsq-style
+syntax.  You can use them as inspiration on how to type in formulas by hand.
+In example-formulas.form, on the other hand, you can find some formulas that
+were saved from the UI and which you can load with the “Open…” command.  Note
+that the file ending chosen is arbitrary, you can choose another one if you
+want.
+
+The source code is available via Subversion, see the website:
+
+http://tcl.sfs.uni-tuebingen.de/MonaSearch
+
+Questions, comments and bugs to Hendrik Maryns, <hendrik@sfs.uni-tuebingen.de>.

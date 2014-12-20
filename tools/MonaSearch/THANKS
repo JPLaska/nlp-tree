@@ -1,0 +1,21 @@
+MonaSearch THANKS file
+
+MonaSearch has originally been written by Hendrik Maryns. Many
+people further contributed to MonaSearch by reporting problems,
+suggesting various improvements or submitting actual code.
+Here is a list of these people. Help me keep it complete and
+exempt of errors.
+
+Developers:
+ Hendrik Maryns	<hendrik@sfs.uni-tuebingen.de>
+ Stephan Kepser	<kepser@sfs.uni-tuebingen.de>
+ Chris Millar	<christopher4evr@hotmail.com>
+
+Used libraries and programs:
+ Mona			<http://www.brics.dk/mona/>
+ Jakarta CLI	<http://commons.apache.org/cli/index.html>
+ ANTLR			<http://www.antlr.org/>
+
+Ideas and suggestions:
+ Michael Jakl	<jakl@dbai.tuwien.ac.at>
+ Paolina Teneva <paolina_teneva@yahoo.com>

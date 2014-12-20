@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<corpus version="1.1" id="CHINESETreebankSampler">
+  <!--This file is maintained by the TIGERRegistry tool. Please do NOT modify this file.-->
+  <!--Declaration of the corpus types-->
+  <types>
+    <feature name="word" />
+    <feature name="cat" />
+    <feature name="pos" />
+  </types>
+  <!--Declaration of the corpus templates-->
+  <templates />
+  <!--Declaration of corpus bookmarks-->
+  <bookmarks path="" />
+</corpus>
+

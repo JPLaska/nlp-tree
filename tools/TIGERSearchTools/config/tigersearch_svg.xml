@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+
+<!DOCTYPE svgfilter SYSTEM "tigersearch_svg.dtd">
+
+
+<!-- These are the default settings of the TIGER GraphViewer SVG export.
+     Please do NOT MODIFY this file! -->
+
+
+<svgfilter version="1.0">
+
+  <filter name="white background">
+    g[type="bgcolor"] > rect { fill:white }
+  </filter>  
+
+  <filter name="no match highlighting">
+     g[match="node"] text { fill:black }
+     g[match="node"] line { stroke:black }
+     g[match="node"] rect { stroke:black }
+     g[match="node"] ellipse { stroke:black }
+
+     g[match="subgraph"] text { fill:black }
+     g[match="subgraph"] line { stroke:black }
+     g[match="subgraph"] rect { stroke:black }
+     g[match="subgraph"] ellipse { stroke:black }
+  </filter>
+
+  <filter name="no match highlighting + white background">
+     g[match="node"] text { fill:black }
+     g[match="node"] line { stroke:black }
+     g[match="node"] rect { stroke:black }
+     g[match="node"] ellipse { stroke:black }
+
+     g[match="subgraph"] text { fill:black }
+     g[match="subgraph"] line { stroke:black }
+     g[match="subgraph"] rect { stroke:black }
+     g[match="subgraph"] ellipse { stroke:black }
+
+     g[type="bgcolor"] > rect { fill:white }
+  </filter>
+
+  <filter name="black and white">
+     text { fill:black }
+     line,rect,ellipse { stroke:black }
+     rect { fill:white }
+     path { stroke:black }
+  </filter>
+
+</svgfilter>
+

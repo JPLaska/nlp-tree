@@ -1,0 +1,8 @@
+
+<!ELEMENT svgfilter (filter+)>
+<!ATTLIST svgfilter version  CDATA #IMPLIED>
+
+
+<!ELEMENT filter (#PCDATA)>
+<!ATTLIST filter name  CDATA #REQUIRED>
+

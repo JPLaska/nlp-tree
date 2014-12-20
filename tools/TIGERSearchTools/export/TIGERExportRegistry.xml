@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE registry SYSTEM "TIGERExportRegistry.dtd">
+
+
+<registry version="1.0">
+
+  <stylesheet id="graph_alltokens"
+              name="sentence format (all tokens)"
+              sentence_xslt="graph_alltokens.xsl" />
+
+  <stylesheet id="graph_tokensmatched"
+              name="sentence format (all matching tokens)"
+              sentence_xslt="graph_tokensmatched.xsl" />
+
+  <stylesheet id="graph_tokensmarked"
+              name="sentence format (all tokens, matching tokens marked)"
+              sentence_xslt="graph_tokensmarked.xsl" />
+
+  <stylesheet id="graph_tokensandpos"
+              name="sentence format (all tokens incl. part-of-speech)"
+              sentence_xslt="graph_tokensandpos.xsl" />
+
+  <stylesheet id="variables_tokens"
+              name="variables and their tokens"
+              sentence_xslt="variables_tokens.xsl" />
+
+  <stylesheet id="variables_values"
+              name="variables and their values"
+              sentence_xslt="variables_values.xsl" />
+
+  <stylesheet id="bracketing"
+              name="bracketing format"
+              sentence_xslt="bracketing.xsl" />
+
+  <stylesheet id="cfrules"
+              name="context-free rules"
+              sentence_xslt="cfrules.xsl" />
+
+  <stylesheet id="sentence_numbers"
+              name="list of sentence numbers (to be processed by Annotate)"
+              sentence_xslt="annotate.xsl" />
+
+</registry>

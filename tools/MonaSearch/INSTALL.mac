@@ -1,0 +1,72 @@
+----------------------------------------------------------------------
+          MonaSearch Installation Instructions for Macintosh
+----------------------------------------------------------------------
+
+Requirements
+------------
+
+This release requires a 64 bit Intel Mac with Java 6.
+If enough people ask for a version that works with Java 5, we’ll consider making
+one, so feel free to ask!
+
+Java 6 for Leopard is available from
+  
+  http://www.apple.com/support/downloads/javaformacosx105update1.html
+
+If you are running Tiger you can try SoyLatte
+
+  http://landonf.bikemonkey.org/static/soylatte
+
+Whichever java you choose you’ll probably want to make it your default Java. 
+To do that add java 6 to your path by adding the following to your 
+~/.profile (if you use SoyLatte modify it accordingly):
+
+  export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
+  export PATH=$JAVA_HOME/bin:$PATH
+
+Then at the console type 
+
+  source ~/.profile
+
+To check which version of java is the default type:
+
+  java -version
+
+You should see something like this:
+
+  java version "1.6.0_06"
+  Java(TM) SE Runtime Environment (build 1.6.0_05-b13-120)
+  Java HotSpot(TM) 64-Bit Server VM (build 1.6.0_05-b13-52, mixed mode)
+
+Mona is also required; a binary installer is available from 
+
+  http://tcl.sfs.uni-tuebingen.de/MonaSearch/mona/mac
+
+Download the installer, run it and install Mona on your System Volume.
+
+Alternatively, if you have XCode installed you can build Mona from source, which 
+can be obtained from
+
+  http://www.brics.dk/mona
+
+Running MonaSearch
+------------------
+
+Once you have Java 6 and Mona installed you’re ready to run MonaSearch.
+
+Extract MonaSearch anywhere you like (e.g. in your home directory). Open a 
+console and cd into the MonaSearch directory. In that directory there should 
+be files called MonaSearch.jar and libmona.jnilib.
+
+To run MonaSearch from the current directory simply type:
+
+java -Djava.library.path=. -jar MonaSearch.jar
+
+Alternatively, you can copy libmona.jnilib into a directory where the JVM looks 
+for it and omit the -D option.  To find out which directories are suited for 
+this, you have to find out what the variable java.library.path in the JVM is set
+to.  The easiest way to find out is to run Roedy Green’s Wassup program from 
+http://mindprod.com/applet/wassup.html.  You’ll probably have to download it, 
+since the applet won’t show the restricted values, of which java.library.path is
+one.  Typical values for Mac include the current directory, 
+/Library/Java/Extensions, /System/Library/Java/Extensions and /usr/lib/java.

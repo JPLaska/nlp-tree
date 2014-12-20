@@ -1,0 +1,143 @@
+Authors of MonaSearch
+
+Some code was taken over from fsq[1] by Stephan Kepser.
+The C code was taken over from the Mona project[2].
+The command line interface uses the Jakarta CLI library from the Apache Software
+Foundation[3], adapted to generics and other Java 5 features by Hendrik.
+All other hacking by Hendrik Maryns <hendrik@sfs.uni-tuebingen.de>.
+The overview below is not entirely correct in that a lot of files were renamed. 
+
+The Mona project:
+ entire files  → 
+ 				 gtalib.h
+ 				 gtalib.c
+ 				 bddlib.h
+
+Stephan Kepser:
+ entire files  → 
+ 				 FormulaParser.java
+ 				 MonaFormulaParser.java
+ 				 Query.java
+ 				 ResultView.java
+ 				 TreeBankConverter.java
+ 				 UIBuilder.java
+ modifications → 
+ 				 test50.export
+
+Hendrik Maryns:
+ entire files  → 
+ 				 AtomicFormula.java
+ 				 AUTHORS
+ 				 BinaryTree.java
+				 BinaryJunctor.java
+				 ComposedFormula.java
+				 Conjunction.java
+				 Disjunction.java
+				 Dominance.java
+				 Equivalence.java
+ 				 example-sentences.txt
+ 				 example-sentences.form
+				 FirstOrderEquality.java
+				 FirstOrderExistentialQuantification.java
+				 FirstOrderQuantor.java
+				 FirstOrderUniversalQuantification.java
+				 FirstOrderVariable.java
+ 				 FormatException.java
+				 Formula.java
+				 FormulaImpl.java
+ 				 FormulaParseException.java
+				 Formulas.java
+				 FormulaTemplate.java
+				 FormulaTransferHandler.java
+				 FormulaVisitor.java
+ 				 FunctionArgumentsMismatchException.java
+				 ImmediateDominance.java
+				 Implication.java
+				 Inclusion.java
+ 				 makefiles/Linux.mk
+ 				 makefiles/MinGW.mk
+ 				 MANIFEST.MF
+ 				 mona.i
+ 				 MonaFormulaBuilder.java
+				 NaryJunctor.java
+				 Negation.java
+				 Precedence.java
+				 Predicate.java
+ 				 PreferenceKeys.java
+				 ProperDominance.java
+				 Quantification.java
+ 				 README
+				 SecondOrderEquality.java
+				 SecondOrderExistentialQuantification.java
+				 SecondOrderQuantor.java
+				 SecondOrderUniversalQuantification.java
+				 SecondOrderVariable.java
+				 SetDenotator.java
+ 				 SubformulaIndexOutOfBoundsException.java
+				 Subset.java
+ 				 THANKS
+				 UnaryJunctor.java
+				 Variable.java
+ 				 VariableIndexOutOfBoundsException.java
+ 				 VisitorException.java
+				 Visitable.java
+ modifications → 
+ 				 build.xml
+ 				 FormulaParser.java
+ 				 gtalib.c
+ 				 LispToMonaParser.java
+ 				 makefiles/makefile
+ 				 makefiles/Darwin.mk
+ 				 MonaFormulaParser.java
+ 				 Query.java
+ 				 ResultView.java
+ 				 TreeBankConverter.java
+ 				 UIBuilder.java
+ 		in CLI:
+				 CommandLine.java
+				 DefaultOptionBuilder.java
+				 Group.java
+				 GroupBuilder.java
+				 HelpFormatter.java
+				 Option.java
+				 Parser.java
+
+Chris Millar:
+ entire files  → 
+ 				 makefiles/Darwin.mk
+ 
+SWIG[4]:
+ entire files  → 
+ 				 mgGta.java
+ 				 mgTreeNode.java
+ 				 Mona.java
+ 				 MonaJNI.java
+ 				 mona_wrap.c
+
+Eclipse[5]:
+ entire files  → 
+ 				 build.xml
+ 				 makefiles/makefile
+ 				 Messages.java
+ 				 messages.properties
+
+TüBa-D/Z:
+ entire files  → 
+ 				 test50.export
+
+Jakarta CLI
+ entire files  → 
+				 ArgumentBuilder.java
+				 CommandLine.java
+				 DefaultOptionBuilder.java
+				 Group.java
+				 GroupBuilder.java
+				 HelpFormatter.java
+				 Option.java
+				 Parser.java
+
+[1] http://tcl.sfs.uni-tuebingen.de/fsq/
+[2] http://www.brics.dk/mona/
+[3] http://www.apache.org/
+[4] http://swig.org/
+[5] http://www.eclipse.org/

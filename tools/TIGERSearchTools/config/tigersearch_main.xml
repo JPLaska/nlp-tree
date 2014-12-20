@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE tigersearch SYSTEM "tigersearch.dtd">
+
+
+<!-- These are the default settings of the TIGERSearch tool.
+     Please do NOT MODIFY this file! -->
+
+
+<tigersearch version="1.0">
+
+
+  <!-- Default configuration -->
+  <config level="default">
+
+    <!-- Window position and size -->
+    <span att="queryWindowX"      units="100"/>
+    <span att="queryWindowY"      units="100"/>
+    <span att="queryWindowWidth"  units="800"/>
+    <span att="queryWindowHeight" units="600"/>
+
+    <!-- Help window position and size -->
+    <span att="helpWindowX"      units="150"/>
+    <span att="helpWindowY"      units="150"/>
+    <span att="helpWindowWidth"  units="800"/>
+    <span att="helpWindowHeight" units="600"/>
+    <span att="helpSeparatorX"   units="300"/>
+
+    <!-- Statistics window position and size -->
+    <span att="statWindowX"      units="100"/>
+    <span att="statWindowY"      units="100"/>
+    <span att="statWindowWidth"  units="800"/>
+    <span att="statWindowHeight" units="600"/>
+
+    <!-- Separator positions -->
+    <span att="queryMainSeparatorX" units="250"/>
+    <span att="querySeparatorCorporaY" units="250"/>
+    <span att="querySeparatorCorpusY" units="250"/>
+    <span att="querySeparatorBookmarksY" units="250"/>
+    <span att="querySeparatorTemplatesY" units="250"/>
+
+    <!-- Font declaration for query input -->
+    <font att="queryFont">
+      <option name="DialogInput" style="plain" size="20"/>
+      <option name="Arial Unicode MS" style="plain" size="20"/>
+      <option name="Bitstream Cyberbit" style="plain" size="20"/>
+    </font>
+
+    <!-- Font declaration for statistical export table cells -->
+    <font att="tableFont">
+      <option name="DialogInput" style="plain" size="16"/>
+      <option name="Arial Unicode MS" style="plain" size="16"/>
+      <option name="Bitstream Cyberbit" style="plain" size="16"/>
+    </font>
+
+    <!-- Automatically load last loaded corpus when starting TS? -->
+    <bool att="autoloadCorpus" value="yes"/>
+
+    <!-- Beginner's mode -->
+    <bool att="beginnersMode" value="yes"/>
+
+  </config>
+
+
+  <!-- Override default parameters for Linux -->
+  <config level="os" name="linux">
+  </config>
+
+  <!-- Override default parameters for Solaris -->
+  <config level="os" name="sunos">
+  </config>
+
+  <!-- Override default parameters for Windows -->
+  <config level="os" name="windows">
+  </config>
+
+
+  <!-- Override default parameters for local installation 
+       (NOT user configuration!) -->
+  <config level="local">
+  </config>
+
+
+</tigersearch>

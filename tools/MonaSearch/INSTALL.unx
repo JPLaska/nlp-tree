@@ -1,0 +1,59 @@
+----------------------------------------------------------------------
+         MonaSearch Installation Instructions for Linux/Unix
+----------------------------------------------------------------------
+
+Requirements
+------------
+
+This release requires Java 6.
+
+To check which version of java is the default type:
+
+  java -version
+
+You should see something like this:
+
+  java version "1.6.0_06"
+  Java(TM) SE Runtime Environment (build 1.6.0_06-b02)
+  Java HotSpot(TM) Client VM (build 10.0-b22, mixed mode, sharing)
+
+or, on 64-bit systems:
+
+  java version "1.6.0_06"
+  Java(TM) SE Runtime Environment (build 1.6.0_06-b02)
+  Java HotSpot(TM) 64-Bit Server VM (build 10.0-b22, mixed mode)
+
+Mona is also required; a precompiled binary is available from
+
+  http://tcl.sfs.uni-tuebingen.de/MonaSearch/mona/linux-32
+
+or, for 64-bit architectures,
+
+  http://tcl.sfs.uni-tuebingen.de/MonaSearch/mona/linux-64
+
+Alternatively, you can build Mona from source, which can be obtained from
+
+  http://www.brics.dk/mona
+
+Running MonaSearch
+------------------
+
+Once you have Java 6 and Mona installed you’re ready to run MonaSearch.
+
+Extract MonaSearch anywhere you like (e.g. in your home directory). Open a 
+terminal and cd into the MonaSearch directory. In that directory there should 
+be files called MonaSearch.jar and libmona.so.
+
+To run MonaSearch from the current directory simply type:
+
+  java -Djava.library.path=. -jar MonaSearch.jar
+
+Alternatively, you can copy libmona.so into a directory where the JVM looks for 
+it and omit the -D option.  To find out which directories are suited for this, 
+you have to find out what the variable java.library.path in the JVM is set to.
+The easiest way to find out is to run Roedy Green’s Wassup program from 
+http://mindprod.com/applet/wassup.html.  You’ll probably have to download it, 
+since the applet won’t show the restricted values, of which java.library.path is
+one.  Typical values for Linux include /lib and /usr/lib (/usr/lib64 won’t do!).
+
+

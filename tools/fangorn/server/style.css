@@ -1,0 +1,209 @@
+*{
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+a {
+	text-decoration:none;
+	color: black;
+}
+
+#top {
+	background-color: #CCFFBB;
+	height: 30pt;
+	margin-bottom: 0;
+	margin-top: 0;
+	position: relative;	
+}
+
+body {
+	margin-top: 0;
+	font-size:100%;
+	min-width: 800px;
+}
+
+table {
+	font-size:10pt;
+}
+
+input {
+	font-size:10pt;
+}
+
+.titlecenter {
+	font-size: 21pt;
+	font-weight: bold;
+	margin-top: 0;
+	position: absolute;
+	top: 12%;
+	text-align: center;
+}
+
+.titleside {
+	width:300px;
+	font-size: 9pt;
+	position: absolute;
+	bottom: 6px;
+	color: darkgreen;
+	font-weight: bold;
+}
+	
+#resultstat{
+	width: 100%;
+}
+
+#resultdiv{
+	min-height: 450px;
+	height: auto;
+}
+
+.evenrow {
+	background-color: #FFFFEE;
+}
+
+hr{
+	margin-top: 0;
+	margin-bottom:0;
+}
+
+#faq {
+	background-color: #B0E0E6;
+}
+
+#abt {
+	background-color: #FFFFE0;
+}
+
+#ql {
+	background-color: #D8BFD8;
+}
+
+.trythisbutton {
+	font-size: 6pt;
+	font-weight:bold;
+	border-radius:7px;
+}
+
+.greynav {
+	color:grey;
+}
+
+.normalnav {
+	color:black;
+}
+
+.greynav:hover {
+	color:grey;
+	display: none;
+}
+
+
+.normalnav:hover {
+	cursor: pointer;
+	font-weight: bold;	
+}
+
+.navbarleft {
+	width: 39%;
+}
+
+.navbarright {
+	width: 37%;	
+}
+
+.navbarmiddle {
+	width: 24%;
+}
+
+.navbarbtn {
+	font-size: 6.5pt;
+}
+
+.highlight {
+	background-color:yellow;
+}
+
+.error{
+	background-color:red;
+}
+
+.hide {
+	display: none;
+}
+
+.querywindowshow {
+	position:fixed;
+	background:white;
+	border-radius:4px;
+	padding:8px;
+	z-index: 2;
+	width:800px;
+	height:494px;
+	text-align:center;
+	overflow-x:auto; 
+	overflow-y:auto;
+	top: 40px;
+}
+
+#querywindowtext {
+	width: 70%;
+	height: 65px;
+	display:table-cell; 
+	vertical-align:middle;
+}
+
+#querywindowtree {
+	overflow-x: auto; 
+	overflow-y: auto;
+}
+
+#querytexttable {
+	margin-left:auto;
+	margin-right:auto;	
+}
+
+#querytreetable {
+	overflow-x: auto; 
+	overflow-y: auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.close {
+	background: url("close.png") no-repeat scroll 50% 50% transparent;
+	background-size: cover;
+	float: right;
+	width: 18px;
+	height: 18px;	
+}
+
+.overlayshow {
+	position:fixed; 
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:#000;
+	opacity:0.9;
+}
+
+#infodiv {
+	width:100%;
+	vertical-align:middle;
+	text-align:left;
+	font-size: 8pt;
+}
+
+.infocol {
+	height:26px;
+	width:64%;
+	text-align:middle;
+}
+
+.editcol {
+	width:34%;
+	vertical-align:middle;
+}
+
+#modifyopr {
+	font-size: 8pt;	
+}

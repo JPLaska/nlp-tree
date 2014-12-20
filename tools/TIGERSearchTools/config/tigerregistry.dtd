@@ -1,0 +1,14 @@
+
+<!ELEMENT tigerregistry (importfilter)>
+<!ATTLIST tigerregistry version CDATA #IMPLIED>
+
+<!ELEMENT importfilter (filter|group)+>
+
+<!ELEMENT group    (group|filter)+>
+<!ATTLIST group    name CDATA #REQUIRED>
+
+<!ELEMENT filter   EMPTY>
+<!ATTLIST filter   id   ID    #REQUIRED>
+<!ATTLIST filter   name CDATA #REQUIRED>
+<!ATTLIST filter   path CDATA #REQUIRED>
+

@@ -1,0 +1,30 @@
+
+<!ELEMENT tigersearch (config+)>
+<!ATTLIST tigersearch version CDATA #IMPLIED>
+
+<!ELEMENT config (bool|color|font|span|keymap|history)*>
+<!ATTLIST config level (default|os|local|user) #REQUIRED>
+<!ATTLIST config name  CDATA #IMPLIED>
+
+<!ELEMENT bool   EMPTY>
+<!ATTLIST bool   att   CDATA    #REQUIRED>
+<!ATTLIST bool   value (yes|no) #REQUIRED>
+
+<!ELEMENT color  EMPTY>
+<!ATTLIST color  att   CDATA #REQUIRED>
+<!ATTLIST color  r     CDATA #REQUIRED>
+<!ATTLIST color  g     CDATA #REQUIRED>
+<!ATTLIST color  b     CDATA #REQUIRED>
+
+<!ELEMENT font  (option+)>
+<!ATTLIST font  att    CDATA #REQUIRED>
+
+<!ELEMENT option EMPTY>
+<!ATTLIST option  name   CDATA #REQUIRED>
+<!ATTLIST option  style  CDATA #REQUIRED>
+<!ATTLIST option  size   CDATA #REQUIRED>
+
+<!ELEMENT span  EMPTY>
+<!ATTLIST span  att    CDATA #REQUIRED>
+<!ATTLIST span  units  CDATA #REQUIRED>
+

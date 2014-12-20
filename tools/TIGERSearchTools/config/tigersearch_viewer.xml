@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE graphviewer SYSTEM "tigersearch_viewer.dtd">
+
+
+<!-- These are the default settings of the TIGER GraphViewer.
+     Please do NOT MODIFY this file! -->
+
+
+<graphviewer version="1.0">
+
+
+  <!-- Default parameters -->
+  <config level="default">
+
+    <!-- Default position and size of the GraphViewer window -->
+    <span  att="windowX" units="150"/>
+    <span  att="windowY" units="150"/>
+    <span  att="windowWidth" units="800"/>
+    <span  att="windowHeight" units="600"/>
+
+    <!-- Parameters: Sentence draw algorithm -->
+    <span  att="treeHorizontalMargin" units="30"/>
+    <span  att="treeVerticalMargin" units="20"/>
+    <span  att="treeLevelYOffset" units="60"/>
+    <span  att="treeTerminalFeatures" units="5"/>
+    <span  att="treeLockedHeight" units="15"/>
+    <span  att="treeLockedWidth" units="20"/>
+
+    <!-- Parameters: Panel -->
+    <color att="panelBackgroundColor" r="204" g="204" b="204"/>
+    <color att="panelColor" r="0" g="0" b="0"/>
+
+    <!-- Parameters: all nodes (nodes, labels, leafs) -->
+    <color att="nodeMatchSubgraphColor" r="150" g="0" b="0"/>
+    <color att="nodeMatchColor" r="255" g="0" b="0"/>
+    <color att="nodeHighlightedColor" r="0" g="0" b="178"/>
+    <color att="nodeImplodedColor" r="0" g="200" b="0"/>
+
+    <!-- Parameters: virtual root node -->
+    <bool  att="virtualRootNodeDisplay" value="yes"/>
+    <color att="virtualRootColor" r="128" g="128" b="128"/>
+
+    <!-- Parameters: inner nodes -->
+    <color att="nodeBackgroundColor" r="255" g="255" b="255"/>
+    <color att="nodeColor" r="0" g="0" b="0"/>
+    <font  att="nodeFont">
+      <option name="Dialog" style="bold" size="12"/>
+      <option name="Arial Unicode MS" style="plain" size="14"/>
+      <option name="Bitstream Cyberbit" style="plain" size="14"/>
+    </font>
+    <span  att="nodeHorizontalCorrection" units="0"/>
+    <span  att="nodeVerticalCorrection" units="0"/>
+    <span  att="nodeMinWidth" units="25"/>
+    <span  att="nodeMaxWidth" units="50"/>
+    <span  att="nodeHeight" units="20"/>
+
+    <!-- Parameters: edges + secondary edges + labels -->
+    <color att="labelBackgroundColor" r="177" g="180" b="200"/>
+    <font  att="labelFont">
+      <option name="Dialog" style="plain" size="9"/>
+      <option name="Arial Unicode MS" style="plain" size="10"/>
+      <option name="Bitstream Cyberbit" style="plain" size="10"/>
+    </font>
+    <span  att="labelHorizontalCorrection" units="0"/>
+    <span  att="labelVerticalCorrection" units="0"/>
+    <span  att="labelMinWidth" units="16"/>
+    <span  att="labelMaxWidth" units="40"/>
+    <span  att="labelHeight" units="12"/>
+    <span  att="labelDistance" units="35"/>
+    <bool  att="secondaryEdgeDisplay" value="yes"/>
+    <color att="secondaryEdgeColor" r="0" g="160" b="0"/>
+
+    <!-- Parameters: leafs -->
+    <font  att="leafFont">
+      <option name="Dialog" style="plain" size="14"/>
+      <option name="Arial Unicode MS" style="plain" size="18"/>
+      <option name="Bitstream Cyberbit" style="plain" size="18"/>
+    </font>
+    <span  att="leafMinWidth" units="50"/>
+    <span  att="leafMaxWidth" units="200"/>
+    <span  att="leafHeight" units="20"/>
+    <span  att="leafGapX" units="10"/>
+    <span  att="leafGapY" units="1"/>
+    <bool  att="leafEllipseIfImploded" value="yes"/>
+
+    <!-- Other parameters -->
+    <font  att="tooltipFont">
+      <option name="Dialog" style="plain" size="14"/>
+      <option name="Arial Unicode MS" style="plain" size="14"/>
+      <option name="Bitstream Cyberbit" style="plain" size="14"/>
+    </font>
+    <span  att="textContext" units="0"/>  
+    <param att="suppressEdgeLabel" value="--"/>
+    <param att="suppressFeatureValue" value="--"/>
+ 
+  </config>
+
+
+  <!-- Override default parameters for Solaris -->
+  <config level="os" name="sunos">
+    <span att="nodeVerticalCorrection" units="1"/>
+    <span att="labelVerticalCorrection" units="0"/>
+  </config>
+
+  <!-- Override default parameters for Linux -->
+  <config level="os" name="linux">
+    <span att="nodeVerticalCorrection" units="2"/>
+    <span att="labelVerticalCorrection" units="2"/>
+  </config>
+
+  <!-- Override default parameters for Windows -->
+  <config level="os" name="windows">
+    <span att="nodeVerticalCorrection" units="1"/>
+    <span att="labelVerticalCorrection" units="2"/>
+  </config>
+
+  <!-- Override default parameters for Mac OS X -->
+  <config level="os" name="mac">
+    <span att="nodeVerticalCorrection" units="3"/>
+    <span att="labelVerticalCorrection" units="2"/>
+  </config>
+
+
+  <!-- Override default parameters for the local installation (NOT
+  user configuration!) -->
+  <config level="local">
+  </config>
+
+
+</graphviewer>
+
